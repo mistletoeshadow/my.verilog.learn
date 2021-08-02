@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FPGA\my.verilog.learn\flow_led\prj\flow_led\flow_led.ncd
+OUTFILE=E:\FPGA\my.verilog.learn\flow_led\prj\flow_led\flow_led.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=E:\FPGA\my.verilog.learn\flow_led\prj\flow_led
+LICENSE=WebPack
+USER_INFO=__0_0_0

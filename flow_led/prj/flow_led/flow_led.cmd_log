@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/flow_led/prj/flow_led/flow_led.xst" -ofn "E:/FPGA/my.verilog.learn/flow_led/prj/flow_led/flow_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 flow_led.ngc flow_led.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o flow_led_map.ncd flow_led.ngd flow_led.pcf 
+par -w -intstyle ise -ol high -mt off flow_led_map.ncd flow_led.ncd flow_led.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml flow_led.twx flow_led.ncd -o flow_led.twr flow_led.pcf 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/flow_led/prj/flow_led/flow_led.xst" -ofn "E:/FPGA/my.verilog.learn/flow_led/prj/flow_led/flow_led.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/FPGA/my.verilog.learn/flow_led/prj/flow_led.ucf -p xc6slx16-csg324-2 flow_led.ngc flow_led.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o flow_led_map.ncd flow_led.ngd flow_led.pcf 
+par -w -intstyle ise -ol high -mt off flow_led_map.ncd flow_led.ncd flow_led.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml flow_led.twx flow_led.ncd -o flow_led.twr flow_led.pcf 
+bitgen -intstyle ise -f flow_led.ut flow_led.ncd 
