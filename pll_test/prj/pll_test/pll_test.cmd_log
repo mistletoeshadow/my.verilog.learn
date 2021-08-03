@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/pll_test/prj/pll_test/pll_test.xst" -ofn "E:/FPGA/my.verilog.learn/pll_test/prj/pll_test/pll_test.syr" 
