@@ -77,6 +77,7 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1627875250" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1627875249">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1627875250" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5278499628890193665" xil_pn:start_ts="1627875250">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -136,6 +137,8 @@
     <transform xil_pn:end_ts="1627875414" xil_pn:in_ck="-6670949596559550090" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1627875407">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="flow_led.pcf"/>
       <outfile xil_pn:name="flow_led_map.map"/>
@@ -163,6 +166,7 @@
     <transform xil_pn:end_ts="1627875442" xil_pn:in_ck="5326028624506549807" xil_pn:name="TRANEXT_bitFile_spartan6" xil_pn:prop_ck="396117104113915555" xil_pn:start_ts="1627875430">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="flow_led.bgn"/>
       <outfile xil_pn:name="flow_led.bit"/>
@@ -175,6 +179,7 @@
     <transform xil_pn:end_ts="1627875516" xil_pn:in_ck="5326028624506536953" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="8482462020707587906" xil_pn:start_ts="1627875514">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1627875427" xil_pn:in_ck="-6670949596559550222" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1627875422">
       <status xil_pn:value="SuccessfullyRun"/>
