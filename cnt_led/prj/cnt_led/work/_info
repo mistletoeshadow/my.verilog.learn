@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led
+vcnt_led
+!s110 1629278494
+!i10b 1
+!s100 4PWe^@]SFf<DMIdmU=A0f1
+IkJZ2^m1[351hiam4W4UJk1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1629277618
+8../../rtl/cnt_led.v
+F../../rtl/cnt_led.v
+L0 21
+Z2 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1629278494.897000
+!s107 ../../rtl/cnt_led.v|
+!s90 -reportprogress|300|../../rtl/cnt_led.v|
+!i113 1
+Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vcnt_led_tb
+Z4 !s110 1629278495
+!i10b 1
+!s100 >XXhQPP]GSog]^MU`G[RO3
+Ie5cVM=P0F5[ZYR8mMNVHz3
+R1
+R0
+w1629278434
+8../../sim/tb/cnt_led_tb.v
+F../../sim/tb/cnt_led_tb.v
+L0 25
+R2
+r1
+!s85 0
+31
+!s108 1629278495.057000
+!s107 ../../sim/tb/cnt_led_tb.v|
+!s90 -reportprogress|300|../../sim/tb/cnt_led_tb.v|
+!i113 1
+R3
+vglbl
+R4
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IUDHabCNf_PPR14OX`9V4S3
+R1
+R0
+w1381681120
+8D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+R2
+r1
+!s85 0
+31
+!s108 1629278495.243000
+!s107 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+R3

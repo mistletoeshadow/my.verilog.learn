@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.xst" -ofn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.xst" -ofn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.xst" -ofn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.xst" -ofn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.xst" -ofn "E:/FPGA/my.verilog.learn/cnt_led/prj/cnt_led/led_driver.syr" 

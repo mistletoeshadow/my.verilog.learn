@@ -1,0 +1,3 @@
+verilog work "../../rtl/cnt_led_2.v"
+verilog work "../../rtl/cnt_led.v"
+verilog work "../../rtl/led_driver.v"

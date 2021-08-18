@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/uart_byte_tx/prj/uart_byte_tx
+vglbl
+Z1 !s110 1628670190
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IUDHabCNf_PPR14OX`9V4S3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1628670190.710000
+!s107 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart_byte_tx
+R1
+!i10b 1
+!s100 1;Q?:edSZfW<[885HQJcc3
+I7^ZEhk;T9<1WPQO^mM_[j3
+R2
+R0
+w1628591575
+8../../rtl/uart_byte_tx.v
+F../../rtl/uart_byte_tx.v
+L0 21
+R3
+r1
+!s85 0
+31
+!s108 1628670190.516000
+!s107 ../../rtl/uart_byte_tx.v|
+!s90 -reportprogress|300|../../rtl/uart_byte_tx.v|
+!i113 1
+R4
+vuart_byte_tx_tb
+R1
+!i10b 1
+!s100 YTTX=>^SBC3JaIb@hdIVj1
+IS32iOmS=F6DZR1:le>QCB0
+R2
+R0
+w1628670163
+8../../sim/tb/uart_byte_tx_tb.v
+F../../sim/tb/uart_byte_tx_tb.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1628670190.602000
+!s107 ../../sim/tb/uart_byte_tx_tb.v|
+!s90 -reportprogress|300|../../sim/tb/uart_byte_tx_tb.v|
+!i113 1
+R4

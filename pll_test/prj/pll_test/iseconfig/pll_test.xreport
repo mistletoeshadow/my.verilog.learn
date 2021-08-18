@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-08-04T00:25:39</DateModified>
+  <DateModified>2021-08-06T17:09:44</DateModified>
   <ModuleName>pll_test</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/pll_test/prj/pll_test/iseconfig/pll_test.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/pll_test/prj/pll_test</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/pll_test/prj/pll_test\</ImplementationReportsDirectory>
   <DateInitialized>2021-08-04T00:25:38</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
