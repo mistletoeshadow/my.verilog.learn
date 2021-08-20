@@ -1,0 +1,121 @@
+# Reading C:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {xulie_signal_tb.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:57:31 on Aug 19,2021
+# vlog -reportprogress 300 ../../rtl/xulie_signal.v 
+# -- Compiling module xulie_signal
+# 
+# Top level modules:
+# 	xulie_signal
+# End time: 22:57:31 on Aug 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:57:31 on Aug 19,2021
+# vlog -reportprogress 300 ../../sim/tb/xulie_signal_tb.v 
+# -- Compiling module xulie_signal_tb
+# 
+# Top level modules:
+# 	xulie_signal_tb
+# End time: 22:57:31 on Aug 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 22:57:31 on Aug 19,2021
+# vlog -reportprogress 300 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 22:57:31 on Aug 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {xulie_signal_tb.fdo}" 
+# Start time: 22:57:31 on Aug 19,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.xulie_signal_tb
+# Loading work.xulie_signal
+# Loading work.glbl
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run
+run
+run
+# ** Note: $stop    : ../../sim/tb/xulie_signal_tb.v(62)
+#    Time: 8000200 ns  Iteration: 0  Instance: /xulie_signal_tb
+# Break in Module xulie_signal_tb at ../../sim/tb/xulie_signal_tb.v line 62
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+run
+# ** Note: $stop    : ../../sim/tb/xulie_signal_tb.v(62)
+#    Time: 8000200 ns  Iteration: 0  Instance: /xulie_signal_tb
+# Break in Module xulie_signal_tb at ../../sim/tb/xulie_signal_tb.v line 62
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 23:03:25 on Aug 19,2021
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v 
+# -- Compiling module xulie_signal
+# 
+# Top level modules:
+# 	xulie_signal
+# End time: 23:03:25 on Aug 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 23:03:58 on Aug 19,2021
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v 
+# -- Compiling module xulie_signal
+# 
+# Top level modules:
+# 	xulie_signal
+# End time: 23:03:59 on Aug 19,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.xulie_signal
+run
+# ** Note: $stop    : ../../sim/tb/xulie_signal_tb.v(62)
+#    Time: 8000200 ns  Iteration: 0  Instance: /xulie_signal_tb
+# Break in Module xulie_signal_tb at ../../sim/tb/xulie_signal_tb.v line 62
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 23:04:52 on Aug 19,2021
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v 
+# -- Compiling module xulie_signal
+# 
+# Top level modules:
+# 	xulie_signal
+# End time: 23:04:52 on Aug 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.xulie_signal
+run
+# ** Note: $stop    : ../../sim/tb/xulie_signal_tb.v(62)
+#    Time: 8000200 ns  Iteration: 0  Instance: /xulie_signal_tb
+# Break in Module xulie_signal_tb at ../../sim/tb/xulie_signal_tb.v line 62
+# End time: 23:25:32 on Aug 19,2021, Elapsed time: 0:28:01
+# Errors: 0, Warnings: 5

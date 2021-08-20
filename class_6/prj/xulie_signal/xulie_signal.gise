@@ -22,24 +22,107 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="xulie_signal.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="xulie_signal.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="xulie_signal.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="xulie_signal.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="xulie_signal.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="xulie_signal.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="xulie_signal.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="xulie_signal.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="xulie_signal.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="xulie_signal.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="xulie_signal.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="xulie_signal.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="xulie_signal.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="xulie_signal.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="xulie_signal.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="xulie_signal.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="xulie_signal.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="xulie_signal.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="xulie_signal.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="xulie_signal.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="xulie_signal_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="xulie_signal_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="xulie_signal_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="xulie_signal_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="xulie_signal_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="xulie_signal_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="xulie_signal_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="xulie_signal_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="xulie_signal_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="xulie_signal_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="xulie_signal_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="xulie_signal_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="xulie_signal_summary.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="xulie_signal_tb.fdo"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="xulie_signal_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="xulie_signal_xst.xrpt"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1629382368" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1629382368">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1629385036" xil_pn:in_ck="-2933757763815551985" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1629385036">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../rtl/xulie_signal.v"/>
+      <outfile xil_pn:name="../../sim/tb/xulie_signal_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382368" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-8176914567196442480" xil_pn:start_ts="1629382368">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382368" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6060950952136722354" xil_pn:start_ts="1629382368">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382368" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-1213029340272617369" xil_pn:start_ts="1629382368">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1629385036" xil_pn:in_ck="-2933757763815551985" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1629385036">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="../../rtl/xulie_signal.v"/>
+      <outfile xil_pn:name="../../sim/tb/xulie_signal_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1629385040" xil_pn:in_ck="-2933757763815551985" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3955124671757855930" xil_pn:start_ts="1629385036">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
+      <outfile xil_pn:name="xulie_signal_tb.fdo"/>
+    </transform>
     <transform xil_pn:end_ts="1629297043" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1629297043">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1629297043" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3106244555578650201" xil_pn:start_ts="1629297043">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -65,9 +148,13 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1629297052" xil_pn:in_ck="-6444684896029234657" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4673188349678840618" xil_pn:start_ts="1629297043">
+    <transform xil_pn:end_ts="1629382271" xil_pn:in_ck="-6444684896029234657" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-4673188349678840618" xil_pn:start_ts="1629382256">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -79,6 +166,57 @@
       <outfile xil_pn:name="xulie_signal.syr"/>
       <outfile xil_pn:name="xulie_signal.xst"/>
       <outfile xil_pn:name="xulie_signal_xst.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382271" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-6860854716643857530" xil_pn:start_ts="1629382271">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382280" xil_pn:in_ck="-2464000930709021174" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="3260978337828728648" xil_pn:start_ts="1629382271">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="xulie_signal.bld"/>
+      <outfile xil_pn:name="xulie_signal.ngd"/>
+      <outfile xil_pn:name="xulie_signal_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382298" xil_pn:in_ck="-2464000930709021173" xil_pn:name="TRANEXT_map_spartan6" xil_pn:prop_ck="-3180699873896808002" xil_pn:start_ts="1629382280">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="xulie_signal.pcf"/>
+      <outfile xil_pn:name="xulie_signal_map.map"/>
+      <outfile xil_pn:name="xulie_signal_map.mrp"/>
+      <outfile xil_pn:name="xulie_signal_map.ncd"/>
+      <outfile xil_pn:name="xulie_signal_map.ngm"/>
+      <outfile xil_pn:name="xulie_signal_map.xrpt"/>
+      <outfile xil_pn:name="xulie_signal_summary.xml"/>
+      <outfile xil_pn:name="xulie_signal_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382313" xil_pn:in_ck="1387482896347314852" xil_pn:name="TRANEXT_par_spartan6" xil_pn:prop_ck="-1178055513630676559" xil_pn:start_ts="1629382298">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="xulie_signal.ncd"/>
+      <outfile xil_pn:name="xulie_signal.pad"/>
+      <outfile xil_pn:name="xulie_signal.par"/>
+      <outfile xil_pn:name="xulie_signal.ptwx"/>
+      <outfile xil_pn:name="xulie_signal.unroutes"/>
+      <outfile xil_pn:name="xulie_signal.xpi"/>
+      <outfile xil_pn:name="xulie_signal_pad.csv"/>
+      <outfile xil_pn:name="xulie_signal_pad.txt"/>
+      <outfile xil_pn:name="xulie_signal_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1629382313" xil_pn:in_ck="-2464000930709021305" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416184" xil_pn:start_ts="1629382307">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="xulie_signal.twr"/>
+      <outfile xil_pn:name="xulie_signal.twx"/>
     </transform>
   </transforms>
 

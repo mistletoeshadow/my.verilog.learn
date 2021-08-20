@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/class_6/prj/xulie_signal
+vglbl
+Z1 !s110 1629385051
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IUDHabCNf_PPR14OX`9V4S3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1629385051.484000
+!s107 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vxulie_signal
+!s110 1629385492
+!i10b 1
+!s100 IjiBl_fVM02EDa7jQHW`:0
+IYh8@6a`HbEjQTXJ:=JVP92
+R2
+R0
+w1629385487
+8E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v
+FE:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v
+L0 21
+R3
+r1
+!s85 0
+31
+!s108 1629385492.578000
+!s107 E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v|
+!s90 -reportprogress|300|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|E:/FPGA/my.verilog.learn/class_6/rtl/xulie_signal.v|
+!i113 1
+R4
+vxulie_signal_tb
+R1
+!i10b 1
+!s100 1mHAIojRHWFG0b@dd5RFS1
+I?8o?<e6kil4Pgc<dR6e020
+R2
+R0
+w1629384424
+8../../sim/tb/xulie_signal_tb.v
+F../../sim/tb/xulie_signal_tb.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1629385051.426000
+!s107 ../../sim/tb/xulie_signal_tb.v|
+!s90 -reportprogress|300|../../sim/tb/xulie_signal_tb.v|
+!i113 1
+R4

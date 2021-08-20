@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.36 secs
  
 --> Reading design: xulie_signal.prj
 
@@ -120,13 +120,18 @@ Elaborating module <xulie_signal>.
 
 Synthesizing Unit <xulie_signal>.
     Related source file is "E:\FPGA\my.verilog.learn\class_6\rtl\xulie_signal.v".
-    Found 9-bit register for signal <cnt>.
-    Found 1-bit register for signal <led>.
-    Found 9-bit adder for signal <cnt[8]_GND_1_o_add_1_OUT> created at line 35.
+    Found 18-bit register for signal <cnt>.
+    Found 1-bit register for signal <tx>.
+    Found 1-bit register for signal <tx_done>.
+    Found 18-bit adder for signal <cnt[17]_GND_1_o_add_1_OUT> created at line 39.
+    Found 18-bit comparator greater for signal <cnt[17]_GND_1_o_LessThan_16_o> created at line 71
+    Found 18-bit comparator greater for signal <GND_1_o_cnt[17]_LessThan_17_o> created at line 73
+    Found 18-bit comparator greater for signal <cnt[17]_PWR_1_o_LessThan_18_o> created at line 73
     Summary:
 	inferred   1 Adder/Subtractor(s).
-	inferred  10 D-type flip-flop(s).
-	inferred   6 Multiplexer(s).
+	inferred  20 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   4 Multiplexer(s).
 Unit <xulie_signal> synthesized.
 
 =========================================================================
@@ -134,13 +139,15 @@ HDL Synthesis Report
 
 Macro Statistics
 # Adders/Subtractors                                   : 1
- 9-bit adder                                           : 1
-# Registers                                            : 2
- 1-bit register                                        : 1
- 9-bit register                                        : 1
-# Multiplexers                                         : 6
- 1-bit 2-to-1 multiplexer                              : 5
- 9-bit 2-to-1 multiplexer                              : 1
+ 18-bit adder                                          : 1
+# Registers                                            : 3
+ 1-bit register                                        : 2
+ 18-bit register                                       : 1
+# Comparators                                          : 3
+ 18-bit comparator greater                             : 3
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 18-bit 2-to-1 multiplexer                             : 2
 
 =========================================================================
 
@@ -149,20 +156,19 @@ Macro Statistics
 =========================================================================
 
 
-Synthesizing (advanced) Unit <xulie_signal>.
-The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
-Unit <xulie_signal> synthesized (advanced).
-
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Counters                                             : 1
- 9-bit up counter                                      : 1
-# Registers                                            : 1
- Flip-Flops                                            : 1
-# Multiplexers                                         : 5
- 1-bit 2-to-1 multiplexer                              : 5
+# Adders/Subtractors                                   : 1
+ 18-bit adder                                          : 1
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+# Comparators                                          : 3
+ 18-bit comparator greater                             : 3
+# Multiplexers                                         : 4
+ 1-bit 2-to-1 multiplexer                              : 2
+ 18-bit 2-to-1 multiplexer                             : 2
 
 =========================================================================
 
@@ -182,8 +188,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 10
- Flip-Flops                                            : 10
+# Registers                                            : 20
+ Flip-Flops                                            : 20
 
 =========================================================================
 
@@ -206,24 +212,26 @@ Top Level Output File Name         : xulie_signal.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 42
+# BELS                             : 109
 #      GND                         : 1
-#      INV                         : 1
-#      LUT1                        : 1
-#      LUT3                        : 1
-#      LUT4                        : 4
-#      LUT5                        : 7
-#      LUT6                        : 9
-#      MUXCY                       : 8
-#      MUXF7                       : 1
-#      XORCY                       : 9
-# FlipFlops/Latches                : 10
-#      FDC                         : 10
+#      INV                         : 2
+#      LUT1                        : 17
+#      LUT2                        : 2
+#      LUT3                        : 23
+#      LUT4                        : 5
+#      LUT5                        : 6
+#      LUT6                        : 17
+#      MUXCY                       : 17
+#      VCC                         : 1
+#      XORCY                       : 18
+# FlipFlops/Latches                : 20
+#      FDC                         : 19
+#      FDCE                        : 1
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 2
-#      IBUF                        : 1
-#      OBUF                        : 1
+# IO Buffers                       : 12
+#      IBUF                        : 10
+#      OBUF                        : 2
 
 Device utilization summary:
 ---------------------------
@@ -232,20 +240,20 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              10  out of  18224     0%  
- Number of Slice LUTs:                   23  out of   9112     0%  
-    Number used as Logic:                23  out of   9112     0%  
+ Number of Slice Registers:              20  out of  18224     0%  
+ Number of Slice LUTs:                   72  out of   9112     0%  
+    Number used as Logic:                72  out of   9112     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     23
-   Number with an unused Flip Flop:      13  out of     23    56%  
-   Number with an unused LUT:             0  out of     23     0%  
-   Number of fully used LUT-FF pairs:    10  out of     23    43%  
-   Number of unique control sets:         1
+ Number of LUT Flip Flop pairs used:     72
+   Number with an unused Flip Flop:      52  out of     72    72%  
+   Number with an unused LUT:             0  out of     72     0%  
+   Number of fully used LUT-FF pairs:    20  out of     72    27%  
+   Number of unique control sets:         2
 
 IO Utilization: 
- Number of IOs:                           3
- Number of bonded IOBs:                   3  out of    232     1%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -271,7 +279,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 10    |
+clk                                | BUFGP                  | 20    |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -282,9 +290,9 @@ Timing Summary:
 ---------------
 Speed Grade: -2
 
-   Minimum period: 4.487ns (Maximum Frequency: 222.866MHz)
-   Minimum input arrival time before clock: 3.730ns
-   Maximum output required time after clock: 4.240ns
+   Minimum period: 5.513ns (Maximum Frequency: 181.389MHz)
+   Minimum input arrival time before clock: 5.150ns
+   Maximum output required time after clock: 4.162ns
    Maximum combinational path delay: No path found
 
 Timing Details:
@@ -293,74 +301,69 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 4.487ns (frequency: 222.866MHz)
-  Total number of paths / destination ports: 523 / 10
+  Clock period: 5.513ns (frequency: 181.389MHz)
+  Total number of paths / destination ports: 739 / 20
 -------------------------------------------------------------------------
-Delay:               4.487ns (Levels of Logic = 11)
-  Source:            cnt_4 (FF)
-  Destination:       cnt_8 (FF)
+Delay:               5.513ns (Levels of Logic = 4)
+  Source:            cnt_16 (FF)
+  Destination:       tx (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: cnt_4 to cnt_8
+  Data Path: cnt_16 to tx
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              6   0.525   1.331  cnt_4 (cnt_4)
-     LUT6:I0->O            9   0.254   0.976  cnt[8]_PWR_1_o_equal_1_o11 (cnt[8]_PWR_1_o_equal_1_o_bdd0)
-     LUT4:I3->O            1   0.254   0.681  cnt[8]_PWR_1_o_equal_1_o_inv11 (cnt[8]_PWR_1_o_equal_1_o_inv)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<0> (Mcount_cnt_cy<0>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<1> (Mcount_cnt_cy<1>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<2> (Mcount_cnt_cy<2>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<3> (Mcount_cnt_cy<3>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<4> (Mcount_cnt_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<5> (Mcount_cnt_cy<5>)
-     MUXCY:CI->O           1   0.023   0.000  Mcount_cnt_cy<6> (Mcount_cnt_cy<6>)
-     MUXCY:CI->O           0   0.023   0.000  Mcount_cnt_cy<7> (Mcount_cnt_cy<7>)
-     XORCY:CI->O           1   0.206   0.000  Mcount_cnt_xor<8> (Mcount_cnt8)
-     FDC:D                     0.074          cnt_8
+     FDC:C->Q              4   0.525   1.234  cnt_16 (cnt_16)
+     LUT5:I0->O            6   0.254   0.876  cnt[17]_GND_1_o_equal_10_o<17>111 (cnt[17]_GND_1_o_equal_10_o<17>11)
+     LUT6:I5->O            2   0.254   0.834  cnt[17]_GND_1_o_equal_11_o<17>21 (cnt[17]_GND_1_o_equal_11_o<17>2)
+     LUT6:I4->O            1   0.250   0.958  cnt[17]_data[0]_Select_14_o<0>1 (cnt[17]_data[0]_Select_14_o<0>)
+     LUT6:I2->O            1   0.254   0.000  cnt[17]_data[0]_Select_14_o<0>7 (cnt[17]_data[0]_Select_14_o)
+     FDCE:D                    0.074          tx
     ----------------------------------------
-    Total                      4.487ns (1.499ns logic, 2.988ns route)
-                                       (33.4% logic, 66.6% route)
+    Total                      5.513ns (1.611ns logic, 3.902ns route)
+                                       (29.2% logic, 70.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 10 / 10
+  Total number of paths / destination ports: 48 / 41
 -------------------------------------------------------------------------
-Offset:              3.730ns (Levels of Logic = 2)
-  Source:            rst_n (PAD)
-  Destination:       cnt_0 (FF)
+Offset:              5.150ns (Levels of Logic = 4)
+  Source:            data<5> (PAD)
+  Destination:       tx (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to cnt_0
+  Data Path: data<5> to tx
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O             10   0.255   1.007  rst_n_inv1_INV_0 (rst_n_inv)
-     FDC:CLR                   0.459          cnt_0
+     IBUF:I->O             1   1.328   1.137  data_5_IBUF (data_5_IBUF)
+     LUT6:I0->O            1   0.254   0.910  cnt[17]_data[0]_Select_14_o<0>1_SW0 (N11)
+     LUT6:I3->O            1   0.235   0.958  cnt[17]_data[0]_Select_14_o<0>1 (cnt[17]_data[0]_Select_14_o<0>)
+     LUT6:I2->O            1   0.254   0.000  cnt[17]_data[0]_Select_14_o<0>7 (cnt[17]_data[0]_Select_14_o)
+     FDCE:D                    0.074          tx
     ----------------------------------------
-    Total                      3.730ns (2.042ns logic, 1.688ns route)
-                                       (54.7% logic, 45.3% route)
+    Total                      5.150ns (2.145ns logic, 3.005ns route)
+                                       (41.7% logic, 58.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
-  Total number of paths / destination ports: 1 / 1
+  Total number of paths / destination ports: 2 / 2
 -------------------------------------------------------------------------
-Offset:              4.240ns (Levels of Logic = 1)
-  Source:            led (FF)
-  Destination:       led (PAD)
+Offset:              4.162ns (Levels of Logic = 1)
+  Source:            tx (FF)
+  Destination:       tx (PAD)
   Source Clock:      clk rising
 
-  Data Path: led to led
+  Data Path: tx to tx
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              4   0.525   0.803  led (led_OBUF)
-     OBUF:I->O                 2.912          led_OBUF (led)
+     FDCE:C->Q             2   0.525   0.725  tx (tx_OBUF)
+     OBUF:I->O                 2.912          tx_OBUF (tx)
     ----------------------------------------
-    Total                      4.240ns (3.437ns logic, 0.803ns route)
-                                       (81.1% logic, 18.9% route)
+    Total                      4.162ns (3.437ns logic, 0.725ns route)
+                                       (82.6% logic, 17.4% route)
 
 =========================================================================
 
@@ -372,14 +375,14 @@ Clock to Setup on destination clock clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-clk            |    4.487|         |         |         |
+clk            |    5.513|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.71 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.43 secs
  
 --> 
 

@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-08-18T22:16:27</DateModified>
+  <DateModified>2021-08-19T21:21:24</DateModified>
   <ModuleName>xulie_signal</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/class_6/prj/xulie_signal/iseconfig/xulie_signal.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/class_6/prj/xulie_signal</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/class_6/prj/xulie_signal\</ImplementationReportsDirectory>
   <DateInitialized>2021-08-18T22:16:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
