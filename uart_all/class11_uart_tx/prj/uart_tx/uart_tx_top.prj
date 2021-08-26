@@ -1,0 +1,3 @@
+verilog work "../../rtl/uart_byte_tx.v"
+verilog work "../../rtl/key_filter.v"
+verilog work "../../rtl/uart_tx_top.v"
