@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-08-26T14:49:36</DateModified>
+  <DateModified>2021-08-26T22:13:10</DateModified>
   <ModuleName>key_fliter</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-08-26T22:04:59</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/iseconfig/key_fliter.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter\</ImplementationReportsDirectory>
   <DateInitialized>2021-08-25T21:53:56</DateInitialized>

@@ -29,10 +29,10 @@ module key_fliter(
     );
 
     localparam 
-        IDEL        4'b0001,    
-        key_nedge   4'b0010,
-        DOWN        4'b0100,
-        key_pedge   4'b1000;
+        IDEL        = 4'b0001,    
+        key_nedge   = 4'b0010,
+        DOWN        = 4'b0100,
+        key_pedge   = 4'b1000;
 
     reg [3:0] state;
     reg key_tmp0,key_tmp1;
@@ -76,10 +76,11 @@ module key_fliter(
     end
 
     always @(posedge clk or negedge rst_n) begin
-        if(!rst_n)
+        if(!rst_n)begin
             state <= IDEL;
             key_flag <= 1'b0;
             en_cnt <= 1'b0;
+        end
         else begin
             case (state)
                 IDEL : 
@@ -114,7 +115,7 @@ module key_fliter(
                         key_flag <= 1'b0;
                         if(pedge)begin
                             state <= key_pedge;
-                            en_cnt < =1'b1;
+                            en_cnt <= 1'b1;
                         end
                         else
                             state <= DOWN;
@@ -144,7 +145,6 @@ module key_fliter(
                         key_state <= 1'b1;
                     end
                     
-
             endcase
         end
             

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter
+vglbl
+Z1 !s110 1629988043
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+IUDHabCNf_PPR14OX`9V4S3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FD:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1629988043.394000
+!s107 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vkey_fliter
+R1
+!i10b 1
+!s100 c?C[:;g^nF4ggInP_IT?:3
+IcK`0`LaNOf2R[E]2LS4T_0
+R2
+R0
+w1629969315
+8../../rtl/key_fliter.v
+F../../rtl/key_fliter.v
+Z5 L0 22
+R3
+r1
+!s85 0
+31
+!s108 1629988043.253000
+!s107 ../../rtl/key_fliter.v|
+!s90 -reportprogress|300|../../rtl/key_fliter.v|
+!i113 1
+R4
+vkey_fliter_tb
+R1
+!i10b 1
+!s100 jEQBL:g<HAa2X`<5=diRZ0
+IbBAh?Rbja?zB8:E9LCm0N1
+R2
+R0
+w1629987749
+8../../sim/tb/key_fliter_tb.v
+F../../sim/tb/key_fliter_tb.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1629988043.331000
+!s107 ../../sim/tb/key_fliter_tb.v|
+!s90 -reportprogress|300|../../sim/tb/key_fliter_tb.v|
+!i113 1
+R4
+vkey_model
+R1
+!i10b 1
+!s100 9=[PmG9dg`68iag1KB=LG3
+I75BFUE[SkmYOmagbAXWkF1
+R2
+R0
+w1629987923
+8../../sim/tb/key_model.v
+F../../sim/tb/key_model.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1629988043.113000
+!s107 ../../sim/tb/key_model.v|
+!s90 -reportprogress|300|../../sim/tb/key_model.v|
+!i113 1
+R4

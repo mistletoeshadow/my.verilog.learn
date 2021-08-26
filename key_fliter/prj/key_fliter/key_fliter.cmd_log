@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.xst" -ofn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.xst" -ofn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.xst" -ofn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.xst" -ofn "E:/FPGA/my.verilog.learn/key_fliter/prj/key_fliter/key_fliter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 key_fliter.ngc key_fliter.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o key_fliter_map.ncd key_fliter.ngd key_fliter.pcf 
+par -w -intstyle ise -ol high -mt off key_fliter_map.ncd key_fliter.ncd key_fliter.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml key_fliter.twx key_fliter.ncd -o key_fliter.twr key_fliter.pcf 
