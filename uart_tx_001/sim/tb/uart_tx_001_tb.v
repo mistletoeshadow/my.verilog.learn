@@ -63,7 +63,7 @@ module uart_tx_001_tb;
 		send_en = 1;
 		data_byte = 8'b1001_1100;
 		baud_set = 0;
-		#2500_000;
+		#2500_000;			//2.5ms
 		data_byte = 8'b1010_1001;
 		#2500_000;
 		$stop;

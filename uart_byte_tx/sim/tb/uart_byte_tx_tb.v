@@ -47,18 +47,21 @@ module uart_byte_tx_tb;
 		.tx_done(tx_done), 
 		.uart_state(uart_state)
 	);
-
-		initial clk = 1;
-		always #( `clk_period/2)clk = ~clk;
+	
+	initial clk = 1;
+	always #( `clk_period/2)clk = ~clk;
+	
 	initial begin
 
 		rst_n = 1'b0;
 		data_byte = 8'd0;
 		send_en = 1'd0;
 		baud_set = 3'd4;		//115200
+
 		#(`clk_period*20 + 1)
 		rst_n = 1'b1;
 		#(`clk_period*50);
+		
 		data_byte = 8'haa;
 		send_en = 1'd1;
 		#`clk_period;

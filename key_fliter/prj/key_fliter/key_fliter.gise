@@ -78,6 +78,10 @@
     <transform xil_pn:end_ts="1629988024" xil_pn:in_ck="8058925395843813331" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1629988024">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/key_fliter.v"/>
       <outfile xil_pn:name="../../sim/tb/key_fliter_tb.v"/>
       <outfile xil_pn:name="../../sim/tb/key_model.v"/>
@@ -97,6 +101,11 @@
     <transform xil_pn:end_ts="1629988024" xil_pn:in_ck="8058925395843813331" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1629988024">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/key_fliter.v"/>
       <outfile xil_pn:name="../../sim/tb/key_fliter_tb.v"/>
       <outfile xil_pn:name="../../sim/tb/key_model.v"/>
@@ -104,6 +113,11 @@
     <transform xil_pn:end_ts="1629988031" xil_pn:in_ck="8058925395843813331" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3955124671757855930" xil_pn:start_ts="1629988024">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="key_fliter_tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
       <outfile xil_pn:name="work"/>

@@ -78,6 +78,10 @@
     <transform xil_pn:end_ts="1628670168" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1628670168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/uart_byte_tx.v"/>
       <outfile xil_pn:name="../../sim/tb/uart_byte_tx_tb.v"/>
     </transform>
@@ -96,13 +100,21 @@
     <transform xil_pn:end_ts="1628670168" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1628670168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/uart_byte_tx.v"/>
       <outfile xil_pn:name="../../sim/tb/uart_byte_tx_tb.v"/>
     </transform>
     <transform xil_pn:end_ts="1628670177" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3955124671757855930" xil_pn:start_ts="1628670168">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="uart_byte_tx_tb.fdo"/>
       <outfile xil_pn:name="vsim.wlf"/>
@@ -136,7 +148,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1628591649" xil_pn:in_ck="-1689526336568222603" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3952591046346048980" xil_pn:start_ts="1628591634">
+    <transform xil_pn:end_ts="1630321338" xil_pn:in_ck="-1689526336568222603" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="-3952591046346048980" xil_pn:start_ts="1630321324">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>

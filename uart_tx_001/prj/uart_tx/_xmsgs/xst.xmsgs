@@ -5,7 +5,13 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompiler" num="806" delta="new" >"E:\FPGA\my.verilog.learn\uart_tx_001\rtl\uart_tx.v" Line 156: Syntax error near &quot;<arg fmt="%s" index="1">endmodule</arg>&quot;.
+<msg type="info" file="Xst" num="3217" delta="new" >HDL ADVISOR - Register &lt;<arg fmt="%s" index="1">bps_cnt</arg>&gt; currently described with an asynchronous reset, could be combined with distributed RAM &lt;<arg fmt="%s" index="2">Mram_baud_set[2]_PWR_1_o_wide_mux_0_OUT</arg>&gt; for implementation on block RAM resources if you made this reset synchronous instead.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bps_cnt_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">uart_tx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bps_cnt_10&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">bps_cnt_3</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">uart_tx</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;bps_cnt_11&gt; </arg>
 </msg>
 
 </messages>

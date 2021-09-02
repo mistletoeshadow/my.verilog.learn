@@ -152,4 +152,7 @@ module uart_tx(
             uart_state <= 1'b0;
         else
             uart_state <= uart_state;
+    end
+    
+
 endmodule

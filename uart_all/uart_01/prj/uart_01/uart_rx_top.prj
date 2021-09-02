@@ -1,3 +1,0 @@
-verilog work "../../rtl/uart_byte_tx.v"
-verilog work "../../rtl/uart_byte_rx.v"
-verilog work "../../rtl/uart_byte_top.v"

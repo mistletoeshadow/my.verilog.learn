@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-08-18T16:26:56</DateModified>
+  <DateModified>2021-09-02T10:54:44</DateModified>
   <ModuleName>uart_byte_rx</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/iseconfig/uart_byte_rx.xreport</SavedFilePath>
