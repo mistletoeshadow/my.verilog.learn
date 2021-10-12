@@ -9,62 +9,62 @@ z2
 cModel Technology
 Z0 dE:/FPGA/my.verilog.learn/uart_tx_001/prj/uart_tx
 vglbl
-!s110 1630551446
+Z1 !s110 1630576193
 !i10b 1
 !s100 UlJ]9LUWO:ZWoRO62F9fW3
 IUDHabCNf_PPR14OX`9V4S3
-Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
 w1381681120
 8D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
 FD:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
 L0 5
-Z2 OL;L;10.4;61
+Z3 OL;L;10.4;61
 r1
 !s85 0
 31
-!s108 1630551446.041000
+!s108 1630576193.697000
 !s107 D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
 !s90 -reportprogress|300|D:/xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
 !i113 1
-Z3 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 vuart_tx
-Z4 !s110 1630551445
+R1
 !i10b 1
 !s100 OVHe;9[SP:Z`TgUj80o:;1
 IgLdj;<YYS05W82n9Q[[VY2
-R1
+R2
 R0
 w1630322372
 8../../rtl/uart_tx.v
 F../../rtl/uart_tx.v
 L0 21
-R2
+R3
 r1
 !s85 0
 31
-!s108 1630551445.515000
+!s108 1630576193.555000
 !s107 ../../rtl/uart_tx.v|
 !s90 -reportprogress|300|../../rtl/uart_tx.v|
 !i113 1
-R3
-vuart_tx_001_tb
 R4
+vuart_tx_001_tb
+R1
 !i10b 1
 !s100 WYlc428C`4jlTf2d<XNBV0
 I004<kQHA[6`ID4]2ei:`52
-R1
+R2
 R0
-w1629627635
+w1630563864
 8../../sim/tb/uart_tx_001_tb.v
 F../../sim/tb/uart_tx_001_tb.v
 L0 25
-R2
+R3
 r1
 !s85 0
 31
-!s108 1630551445.960000
+!s108 1630576193.626000
 !s107 ../../sim/tb/uart_tx_001_tb.v|
 !s90 -reportprogress|300|../../sim/tb/uart_tx_001_tb.v|
 !i113 1
-R3
+R4

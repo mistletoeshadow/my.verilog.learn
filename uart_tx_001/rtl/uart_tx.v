@@ -65,10 +65,14 @@ module uart_tx(
     always @(posedge clk or negedge rst_n) begin
         if(!rst_n)
             cnt <= 0;
-        else if (cnt == bps_cnt)
+        else if(uart_state)begin
+            if(cnt == bps_cnt)
+                cnt <= 0;
+            else
+                cnt <= cnt + 1'b1;
+        end
+        else
             cnt <= 0;
-        else 
-            cnt <= cnt + 1'b1;
     end
 
     //产生bps_clk

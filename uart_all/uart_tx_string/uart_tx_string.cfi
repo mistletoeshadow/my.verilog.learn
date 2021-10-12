@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            09/02/2021 - 21:38
+SOURCE          E:\FPGA\my.verilog.learn\uart_all\uart_tx_string\uart_tx_string.mcs
+DEVICE          16384K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0xF7F7D3F6
+START_ADDRESS   0x00000000 END_ADDRESS 0x00071543 DIRECTION_UP   "E:/FPGA/my.verilog.learn/uart_all/uart_tx_string/prj/uart_tx_string/uart_tx_top.bit" 6slx16csg324

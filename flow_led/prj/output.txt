@@ -1,0 +1,8 @@
+Storage Target: SPI Flash Single FPGA
+128M
+FF
+uart_tx_string
+E:/FPGA/my.verilog.learn/uart_all/uart_tx_string
+
+MCS
+No
