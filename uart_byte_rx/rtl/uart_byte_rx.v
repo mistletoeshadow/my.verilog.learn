@@ -50,10 +50,10 @@ module uart_byte_rx(
             bps_DR <= 16'd5207;
         else begin
             case (baud_set)
-                0:bps_DR <= 16'd324;           //9600bps
+                0:bps_DR <= 16'd324;            //9600bps
                 1:bps_DR <= 16'd162;            //19200
-                2:bps_DR <= 16'd80;             //
-                3:bps_DR <= 16'd53;             //
+                2:bps_DR <= 16'd80;             //38400
+                3:bps_DR <= 16'd53;             //57600
                 4:bps_DR <= 16'd26;             //115200
                 default : bps_DR <= 16'd324;
                     
@@ -109,10 +109,13 @@ always@(posedge clk or negedge rst_n)
 		bps_clk <= 1'b0;
 
 //bps counter
+/*
+
+*/
 always@(posedge clk or negedge rst_n)
 	if(!rst_n)	
 		bps_cnt <= 8'd0;
-	else if(rx_done | (bps_cnt == 8'd12 && (START_BIT > 2)))
+	else if(rx_done | (bps_cnt == 8'd12 && (START_BIT > 2)))    //当接收停止或起始位接收错误时
 		bps_cnt <= 8'd0;
 	else if(bps_clk)
 		bps_cnt <= bps_cnt + 1'b1;
@@ -127,13 +130,7 @@ always@(posedge clk or negedge rst_n)
 	else
 		rx_done <= 1'b0; 
 
-always@(posedge clk or negedge rst_n)
-	if(!rst_n)
-		data_byte <= 8'd0;
-	else if(bps_cnt == 8'd159)
-		data_byte <= tmp_data_byte;
-	else
-		data_byte <= data_byte;
+
 
 always@(posedge clk or negedge rst_n)
 	if(!rst_n)begin
@@ -184,16 +181,25 @@ always @(posedge clk or negedge rst_n) begin
     end
     else if(bps_cnt == 8'd159)begin
         //tmp_data_byte[0] = (r_data_byte[2]) ? 1'b1:1'b0;
-        tmp_data_byte[0] = r_data_byte[0][2];
-        tmp_data_byte[1] = r_data_byte[1][2];        
-        tmp_data_byte[2] = r_data_byte[2][2];
-        tmp_data_byte[3] = r_data_byte[3][2];
-        tmp_data_byte[4] = r_data_byte[4][2];
-        tmp_data_byte[5] = r_data_byte[5][2];
-        tmp_data_byte[6] = r_data_byte[6][2];
-        tmp_data_byte[7] = r_data_byte[7][2];
+        tmp_data_byte[0] <= r_data_byte[0][2];
+        tmp_data_byte[1] <= r_data_byte[1][2];        
+        tmp_data_byte[2] <= r_data_byte[2][2];
+        tmp_data_byte[3] <= r_data_byte[3][2];
+        tmp_data_byte[4] <= r_data_byte[4][2];
+        tmp_data_byte[5] <= r_data_byte[5][2];
+        tmp_data_byte[6] <= r_data_byte[6][2];
+        tmp_data_byte[7] <= r_data_byte[7][2];
     end
 end
+
+//设置一个tmp_data_byte对接收的数据进行缓存
+always@(posedge clk or negedge rst_n)
+	if(!rst_n)
+		data_byte <= 8'd0;
+	else if(bps_cnt == 8'd159)
+		data_byte <= tmp_data_byte;
+	else
+		data_byte <= data_byte;
 
 always @(posedge clk or negedge rst_n) begin
     if(!rst_n)

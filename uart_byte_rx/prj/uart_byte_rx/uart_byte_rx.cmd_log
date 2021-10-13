@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
