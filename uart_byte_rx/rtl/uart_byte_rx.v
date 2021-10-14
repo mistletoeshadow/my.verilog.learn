@@ -44,22 +44,6 @@ module uart_byte_rx(
 
     wire nedege;
 
-//波特率设置模块
-    always @(posedge clk or negedge rst_n) begin
-        if(!rst_n)
-            bps_DR <= 16'd5207;
-        else begin
-            case (baud_set)
-                0:bps_DR <= 16'd324;            //9600bps
-                1:bps_DR <= 16'd162;            //19200
-                2:bps_DR <= 16'd80;             //38400
-                3:bps_DR <= 16'd53;             //57600
-                4:bps_DR <= 16'd26;             //115200
-                default : bps_DR <= 16'd324;
-                    
-            endcase
-        end
-    end
 
 //起始位检查模块
 //同步寄存器，消除亚稳态
@@ -85,6 +69,26 @@ always @(posedge clk or negedge rst_n) begin
         tmp1_rs232_rx <= tmp0_rs232_rx;
     end   
 end
+
+assign nedege = !tmp0_rs232_rx & tmp1_rs232_rx;   //下降沿检测
+
+//波特率设置模块
+    always @(posedge clk or negedge rst_n) begin
+        if(!rst_n)
+            bps_DR <= 16'd5207;
+        else begin
+            case (baud_set)
+                0:bps_DR <= 16'd324;            //9600bps
+                1:bps_DR <= 16'd162;            //19200
+                2:bps_DR <= 16'd80;             //38400
+                3:bps_DR <= 16'd53;             //57600
+                4:bps_DR <= 16'd26;             //115200
+                default : bps_DR <= 16'd324;
+                    
+            endcase
+        end
+    end
+
 
 //counter
 always@(posedge clk or negedge rst_n)
@@ -212,6 +216,6 @@ always @(posedge clk or negedge rst_n) begin
         uart_state <= uart_state;
 end
 
-assign nedege = !tmp0_rs232_rx & tmp1_rs232_rx;   //下降沿检测
+
 
 endmodule
