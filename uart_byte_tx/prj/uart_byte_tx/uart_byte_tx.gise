@@ -65,7 +65,6 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="uart_byte_tx_xst.xrpt"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
-    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
@@ -75,13 +74,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1628670168" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1628670168">
+    <transform xil_pn:end_ts="1634295937" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1634295937">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/uart_byte_tx.v"/>
       <outfile xil_pn:name="../../sim/tb/uart_byte_tx_tb.v"/>
     </transform>
@@ -97,28 +92,15 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1628670168" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1628670168">
+    <transform xil_pn:end_ts="1634295937" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1634295937">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="../../rtl/uart_byte_tx.v"/>
       <outfile xil_pn:name="../../sim/tb/uart_byte_tx_tb.v"/>
     </transform>
-    <transform xil_pn:end_ts="1628670177" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3955124671757855930" xil_pn:start_ts="1628670168">
-      <status xil_pn:value="SuccessfullyRun"/>
+    <transform xil_pn:end_ts="1634295941" xil_pn:in_ck="78970385294943099" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="-3955124671757855930" xil_pn:start_ts="1634295937">
+      <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="uart_byte_tx_tb.fdo"/>
-      <outfile xil_pn:name="vsim.wlf"/>
-      <outfile xil_pn:name="work"/>
     </transform>
     <transform xil_pn:end_ts="1628588356" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1628588355">
       <status xil_pn:value="SuccessfullyRun"/>

@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Map" timeStamp="Fri Aug 27 21:34:32 2021">
+  <application stringID="Map" timeStamp="Fri Oct 15 19:01:27 2021">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="D:\xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\xilinx\14.7\ISE_DS\PlanAhead\bin;D:\xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\xilinx\14.7\ISE_DS\common\bin\nt64;D:\xilinx\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\Program Files\Polyspace\R2021a\runtime\win64;D:\Program Files\Polyspace\R2021a\bin;D:\Program Files\Polyspace\R2021a\polyspace\bin;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\mistl\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\modeltech64_10.4\win64;C:\modeltech64_2020.4\win64;C:\Programs\Microsoft VS Code\bin"/>
+          <item stringID="value" value="D:\xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\xilinx\14.7\ISE_DS\PlanAhead\bin;D:\xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\xilinx\14.7\ISE_DS\common\bin\nt64;D:\xilinx\14.7\ISE_DS\common\lib\nt64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\Program Files (x86)\NetSarang\Xftp 7\;C:\Users\mistl\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Bandizip\;C:\modeltech64_10.4\win64;C:\modeltech64_2020.4\win64;C:\Programs\Microsoft VS Code\bin"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -117,8 +117,8 @@
         <item dataType="int" stringID="MAP_NUM_ERRORS" value="0"/>
         <item dataType="int" stringID="MAP_FILTERED_WARNINGS" value="0"/>
         <item dataType="int" stringID="MAP_NUM_WARNINGS" value="0"/>
-        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4636452"/>
-        <item stringID="MAP_TOTAL_REAL_TIME" value="11 secs "/>
+        <item UNITS="KB" dataType="int" stringID="MAP_PEAK_MEMORY" value="4635100"/>
+        <item stringID="MAP_TOTAL_REAL_TIME" value="9 secs "/>
         <item stringID="MAP_TOTAL_CPU_TIME" value="5 secs "/>
       </section>
       <section stringID="MAP_SLICE_REPORTING">

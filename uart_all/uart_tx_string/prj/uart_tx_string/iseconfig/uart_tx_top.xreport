@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-09-03T19:28:21</DateModified>
+  <DateModified>2021-10-15T19:11:52</DateModified>
   <ModuleName>uart_tx_top</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/uart_all/uart_tx_string/prj/uart_tx_string/iseconfig/uart_tx_top.xreport</SavedFilePath>
   <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/uart_all/uart_tx_string/prj/uart_tx_string\</ImplementationReportsDirectory>
-  <DateInitialized>2021-08-27T18:14:31</DateInitialized>
+  <DateInitialized>2021-10-14T20:59:01</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
