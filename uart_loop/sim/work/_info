@@ -1,0 +1,70 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/uart_loop/sim
+vuart_byte_rx
+Z1 !s110 1634557333
+!i10b 1
+!s100 M@_e5Fmg4XRBbYb1[RNoj2
+IgEzc2EHQ^oKnz07`V1g6z2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1634301128
+8E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v
+FE:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v
+L0 2
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1634557333.243000
+!s107 E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v|
+!i113 1
+Z4 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vuart_byte_rx_tb
+R1
+!i10b 1
+!s100 jCfVoSl?^cNV;n=LN3?jU1
+IfQHIQ@TY[=_6j3TMV<c8g3
+R2
+R0
+w1634541521
+8E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v
+FE:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+!s108 1634557333.337000
+!s107 E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v|
+!i113 1
+R4
+vuart_byte_tx
+R1
+!i10b 1
+!s100 8A6T[=JY_8>6^<;1@K@dz1
+I]kOX;a0nBa9fXbT5L7E:l2
+R2
+R0
+w1634301163
+8E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v
+FE:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1634557333.431000
+!s107 E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v|
+!s90 -reportprogress|300|-work|work|-novopt|-stats=none|E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v|
+!i113 1
+R4

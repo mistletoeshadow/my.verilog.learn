@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FPGA\my.verilog.learn\uart_byte_rx\impact.xsl
+OUTFILE=E:\FPGA\my.verilog.learn\uart_byte_rx\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FPGA\my.verilog.learn\uart_byte_rx
+LICENSE=iMPACT
+USER_INFO=iMPACT

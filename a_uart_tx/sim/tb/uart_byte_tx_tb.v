@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   19:14:47 10/15/2021
+// Create Date:   20:51:38 10/16/2021
 // Design Name:   uart_byte_tx
 // Module Name:   E:/FPGA/my.verilog.learn/a_uart_tx/sim/tb/uart_byte_tx_tb.v
 // Project Name:  uart_byte_tx
@@ -48,12 +48,9 @@ module uart_byte_tx_tb;
 		.uart_state(uart_state)
 	);
 
-	initial clk =1;
-	always #10 clk = ~ clk;          //20ns一个周期，产生50MHz时钟源
-
 	initial begin
 		// Initialize Inputs
-		
+		clk = 0;
 		rst_n = 0;
 		data_byte = 0;
 		send_en = 0;
@@ -61,16 +58,6 @@ module uart_byte_tx_tb;
 
 		// Wait 100 ns for global reset to finish
 		#100;
-		rst_n = 1;
-		baud_set = 1;
-		send_en = 1;
-		data_byte = 8'b0001_1101;
-		baud_set = 0;
-		#2500_000;			//2.5ms
-		data_byte = 8'b0110_1001;
-		#2500_000;
-		$stop;
-
         
 		// Add stimulus here
 

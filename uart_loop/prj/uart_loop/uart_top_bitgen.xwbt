@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FPGA\my.verilog.learn\uart_loop\prj\uart_loop\uart_top.ncd
+OUTFILE=E:\FPGA\my.verilog.learn\uart_loop\prj\uart_loop\uart_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=E:\FPGA\my.verilog.learn\uart_loop\prj\uart_loop
+LICENSE=WebPack
+USER_INFO=__0_0_0

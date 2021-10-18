@@ -1,0 +1,10 @@
+vhdtdtfi -lib work E:/FPGA/my.verilog.learn/uart_loop/rtl/uart_top.v -lang verilog -prj uart_loop -o uart_top.spl -module uart_top -template D:/xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 uart_top.spl E:/FPGA/my.verilog.learn/uart_loop/prj/uart_loop/uart_top.sym 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_loop/prj/uart_loop/uart_top.xst" -ofn "E:/FPGA/my.verilog.learn/uart_loop/prj/uart_loop/uart_top.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim uart_top.ngc uart_top_synthesis.v 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim uart_top.ngc uart_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/FPGA/my.verilog.learn/uart_loop/prj/uart.ucf -p xc6slx16-csg324-2 uart_top.ngc uart_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_top_map.ncd uart_top.ngd uart_top.pcf 
+par -w -intstyle ise -ol high -mt off uart_top_map.ncd uart_top.ncd uart_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_top.twx uart_top.ncd -o uart_top.twr uart_top.pcf 
+bitgen -intstyle ise -f uart_top.ut uart_top.ncd 

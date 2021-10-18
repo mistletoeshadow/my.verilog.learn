@@ -1,0 +1,22 @@
+E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v {1 {vlog -work work -novopt -stats=none E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx_tb.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_byte_rx_tb
+
+Top level modules:
+	uart_byte_rx_tb
+
+} {} {}} E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v {1 {vlog -work work -novopt -stats=none E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_tx.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_byte_tx
+
+Top level modules:
+	uart_byte_tx
+
+} {} {}} E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v {1 {vlog -work work -novopt -stats=none E:/FPGA/my.verilog.learn/uart_loop/sim/tb/uart_byte_rx.v
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+-- Compiling module uart_byte_rx
+
+Top level modules:
+	uart_byte_rx
+
+} {} {}}

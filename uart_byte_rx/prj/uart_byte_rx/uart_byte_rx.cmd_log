@@ -5,3 +5,11 @@ map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off uart_byte_rx_map.ncd uart_byte_rx.ncd uart_byte_rx.pcf 
 trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_byte_rx.twx uart_byte_rx.ncd -o uart_byte_rx.twr uart_byte_rx.pcf 
 xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.xst" -ofn "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/uart_byte_rx.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-csg324-2 uart_byte_rx.ngc uart_byte_rx.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o uart_byte_rx_map.ncd uart_byte_rx.ngd uart_byte_rx.pcf 
+par -w -intstyle ise -ol high -mt off uart_byte_rx_map.ncd uart_byte_rx.ncd uart_byte_rx.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml uart_byte_rx.twx uart_byte_rx.ncd -o uart_byte_rx.twr uart_byte_rx.pcf 

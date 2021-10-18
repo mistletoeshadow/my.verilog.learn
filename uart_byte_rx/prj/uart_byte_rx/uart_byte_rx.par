@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-1R0KHAR::  Fri Oct 15 15:03:49 2021
+DESKTOP-1R0KHAR::  Sat Oct 16 19:47:28 2021
 
 par -w -intstyle ise -ol high -mt off uart_byte_rx_map.ncd uart_byte_rx.ncd
 uart_byte_rx.pcf 
@@ -27,16 +27,16 @@ Device speed data version:  "PRODUCTION 1.23 2013-10-13".
 Device Utilization Summary:
 
 Slice Logic Utilization:
-  Number of Slice Registers:                    86 out of  18,224    1%
-    Number used as Flip Flops:                  86
+  Number of Slice Registers:                    77 out of  18,224    1%
+    Number used as Flip Flops:                  77
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                        120 out of   9,112    1%
-    Number used as logic:                      119 out of   9,112    1%
-      Number using O6 output only:              65
+  Number of Slice LUTs:                        125 out of   9,112    1%
+    Number used as logic:                      124 out of   9,112    1%
+      Number using O6 output only:              83
       Number using O5 output only:              15
-      Number using O5 and O6:                   39
+      Number using O5 and O6:                   26
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   2,176    0%
     Number used exclusively as route-thrus:      1
@@ -47,10 +47,10 @@ Slice Logic Utilization:
 Slice Logic Distribution:
   Number of occupied Slices:                    42 out of   2,278    1%
   Number of MUXCYs used:                        32 out of   4,556    1%
-  Number of LUT Flip Flop pairs used:          140
-    Number with an unused Flip Flop:            67 out of     140   47%
-    Number with an unused LUT:                  20 out of     140   14%
-    Number of fully used LUT-FF pairs:          53 out of     140   37%
+  Number of LUT Flip Flop pairs used:          135
+    Number with an unused Flip Flop:            71 out of     135   52%
+    Number with an unused LUT:                  10 out of     135    7%
+    Number of fully used LUT-FF pairs:          54 out of     135   40%
     Number of slice register sites lost
       to control set restrictions:               0 out of  18,224    0%
 
@@ -92,35 +92,35 @@ Specific Feature Utilization:
 Overall effort level (-ol):   High 
 Router effort level (-rl):    High 
 
-Starting initial Timing Analysis.  REAL time: 4 secs 
-Finished initial Timing Analysis.  REAL time: 4 secs 
+Starting initial Timing Analysis.  REAL time: 3 secs 
+Finished initial Timing Analysis.  REAL time: 3 secs 
 
 Starting Router
 
 
-Phase  1  : 689 unrouted;      REAL time: 4 secs 
+Phase  1  : 721 unrouted;      REAL time: 4 secs 
 
-Phase  2  : 602 unrouted;      REAL time: 4 secs 
+Phase  2  : 645 unrouted;      REAL time: 4 secs 
 
-Phase  3  : 235 unrouted;      REAL time: 5 secs 
+Phase  3  : 251 unrouted;      REAL time: 4 secs 
 
-Phase  4  : 235 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Phase  4  : 251 unrouted; (Par is working to improve performance)     REAL time: 4 secs 
 
 Updating file: uart_byte_rx.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 6 secs 
-Total REAL time to Router completion: 6 secs 
-Total CPU time to Router completion: 5 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 5 secs 
+Total REAL time to Router completion: 5 secs 
+Total CPU time to Router completion: 4 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -140,8 +140,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     5.284ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.414ns|            |       0|           0
+  Autotimespec constraint for clock net Clk | SETUP       |         N/A|     5.087ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.415ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -157,8 +157,8 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 7 secs 
-Total CPU time to PAR completion: 5 secs 
+Total REAL time to PAR completion: 6 secs 
+Total CPU time to PAR completion: 4 secs 
 
 Peak Memory Usage:  4474 MB
 

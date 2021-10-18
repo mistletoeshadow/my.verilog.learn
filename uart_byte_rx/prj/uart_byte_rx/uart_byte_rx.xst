@@ -1,9 +1,6 @@
-set -tmpdir "xst/projnav.tmp"
-set -xsthdpdir "xst"
-run
--ifn uart_byte_rx.prj
--ofn uart_byte_rx
--ofmt NGC
+set -tmpdir "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/xst/projnav.tmp"
+set -xsthdpdir "E:/FPGA/my.verilog.learn/uart_byte_rx/prj/uart_byte_rx/xst"
+run -compileonly yes
 -p xc6slx16-2-csg324
 -top uart_byte_rx
 -opt_mode Speed
@@ -50,3 +47,4 @@ run
 -iob Auto
 -equivalent_register_removal YES
 -slice_utilization_ratio_maxmargin 5
+-ifn uart_byte_rx.prj

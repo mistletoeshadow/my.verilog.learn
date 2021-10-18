@@ -1,0 +1,73 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 18 20:00:42 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Led" LOCATE = SITE "T4" LEVEL 1;
+COMP "Rs232_Rx" LOCATE = SITE "B2" LEVEL 1;
+COMP "Rs232_Tx" LOCATE = SITE "C4" LEVEL 1;
+COMP "Rst_n" LOCATE = SITE "N4" LEVEL 1;
+COMP "Clk" LOCATE = SITE "V10" LEVEL 1;
+TIMEGRP sys_clk_pin = BEL "uart_byte_tx_u/bps_cnt_3" BEL
+        "uart_byte_tx_u/bps_cnt_2" BEL "uart_byte_tx_u/bps_cnt_1" BEL
+        "uart_byte_tx_u/bps_cnt_0" BEL "uart_byte_tx_u/div_cnt_15" BEL
+        "uart_byte_tx_u/div_cnt_14" BEL "uart_byte_tx_u/div_cnt_13" BEL
+        "uart_byte_tx_u/div_cnt_12" BEL "uart_byte_tx_u/div_cnt_11" BEL
+        "uart_byte_tx_u/div_cnt_10" BEL "uart_byte_tx_u/div_cnt_9" BEL
+        "uart_byte_tx_u/div_cnt_8" BEL "uart_byte_tx_u/div_cnt_7" BEL
+        "uart_byte_tx_u/div_cnt_6" BEL "uart_byte_tx_u/div_cnt_5" BEL
+        "uart_byte_tx_u/div_cnt_4" BEL "uart_byte_tx_u/div_cnt_3" BEL
+        "uart_byte_tx_u/div_cnt_2" BEL "uart_byte_tx_u/div_cnt_1" BEL
+        "uart_byte_tx_u/div_cnt_0" BEL "uart_byte_tx_u/Rs232_Tx" BEL
+        "uart_byte_tx_u/bps_clk" BEL "uart_byte_tx_u/r_data_byte_7" BEL
+        "uart_byte_tx_u/r_data_byte_6" BEL "uart_byte_tx_u/r_data_byte_5" BEL
+        "uart_byte_tx_u/r_data_byte_4" BEL "uart_byte_tx_u/r_data_byte_3" BEL
+        "uart_byte_tx_u/r_data_byte_2" BEL "uart_byte_tx_u/r_data_byte_1" BEL
+        "uart_byte_tx_u/r_data_byte_0" BEL "uart_byte_tx_u/Tx_Done" BEL
+        "uart_byte_rx_u/bps_cnt_7" BEL "uart_byte_rx_u/bps_cnt_6" BEL
+        "uart_byte_rx_u/bps_cnt_5" BEL "uart_byte_rx_u/bps_cnt_4" BEL
+        "uart_byte_rx_u/bps_cnt_3" BEL "uart_byte_rx_u/bps_cnt_2" BEL
+        "uart_byte_rx_u/bps_cnt_1" BEL "uart_byte_rx_u/bps_cnt_0" BEL
+        "uart_byte_rx_u/div_cnt_15" BEL "uart_byte_rx_u/div_cnt_14" BEL
+        "uart_byte_rx_u/div_cnt_13" BEL "uart_byte_rx_u/div_cnt_12" BEL
+        "uart_byte_rx_u/div_cnt_11" BEL "uart_byte_rx_u/div_cnt_10" BEL
+        "uart_byte_rx_u/div_cnt_9" BEL "uart_byte_rx_u/div_cnt_8" BEL
+        "uart_byte_rx_u/div_cnt_7" BEL "uart_byte_rx_u/div_cnt_6" BEL
+        "uart_byte_rx_u/div_cnt_5" BEL "uart_byte_rx_u/div_cnt_4" BEL
+        "uart_byte_rx_u/div_cnt_3" BEL "uart_byte_rx_u/div_cnt_2" BEL
+        "uart_byte_rx_u/div_cnt_1" BEL "uart_byte_rx_u/div_cnt_0" BEL
+        "uart_byte_rx_u/tmp1_Rs232_Rx" BEL "uart_byte_rx_u/data_byte_7" BEL
+        "uart_byte_rx_u/data_byte_6" BEL "uart_byte_rx_u/data_byte_5" BEL
+        "uart_byte_rx_u/data_byte_4" BEL "uart_byte_rx_u/data_byte_3" BEL
+        "uart_byte_rx_u/data_byte_2" BEL "uart_byte_rx_u/data_byte_1" BEL
+        "uart_byte_rx_u/data_byte_0" BEL "uart_byte_rx_u/tmp0_Rs232_Rx" BEL
+        "uart_byte_rx_u/r_data_byte_0_23" BEL
+        "uart_byte_rx_u/r_data_byte_0_22" BEL
+        "uart_byte_rx_u/r_data_byte_0_21" BEL
+        "uart_byte_rx_u/r_data_byte_0_20" BEL
+        "uart_byte_rx_u/r_data_byte_0_19" BEL
+        "uart_byte_rx_u/r_data_byte_0_18" BEL
+        "uart_byte_rx_u/r_data_byte_0_17" BEL
+        "uart_byte_rx_u/r_data_byte_0_16" BEL
+        "uart_byte_rx_u/r_data_byte_0_15" BEL
+        "uart_byte_rx_u/r_data_byte_0_14" BEL
+        "uart_byte_rx_u/r_data_byte_0_13" BEL
+        "uart_byte_rx_u/r_data_byte_0_12" BEL
+        "uart_byte_rx_u/r_data_byte_0_11" BEL
+        "uart_byte_rx_u/r_data_byte_0_10" BEL "uart_byte_rx_u/r_data_byte_0_9"
+        BEL "uart_byte_rx_u/r_data_byte_0_8" BEL
+        "uart_byte_rx_u/r_data_byte_0_7" BEL "uart_byte_rx_u/r_data_byte_0_6"
+        BEL "uart_byte_rx_u/r_data_byte_0_5" BEL
+        "uart_byte_rx_u/r_data_byte_0_4" BEL "uart_byte_rx_u/r_data_byte_0_3"
+        BEL "uart_byte_rx_u/r_data_byte_0_2" BEL
+        "uart_byte_rx_u/r_data_byte_0_1" BEL "uart_byte_rx_u/r_data_byte_0_0"
+        BEL "uart_byte_rx_u/START_BIT_2" BEL "uart_byte_rx_u/START_BIT_1" BEL
+        "uart_byte_rx_u/START_BIT_0" BEL "uart_byte_rx_u/s1_Rs232_Rx" BEL
+        "uart_byte_rx_u/s0_Rs232_Rx" BEL "uart_byte_rx_u/Rx_Done" BEL
+        "uart_byte_rx_u/bps_clk" BEL "uart_byte_tx_u/uart_state" BEL
+        "uart_byte_rx_u/uart_state" BEL "uart_byte_rx_u/bps_cnt_4_1" BEL
+        "uart_byte_rx_u/bps_cnt_5_1" BEL "uart_byte_rx_u/bps_cnt_4_2" BEL
+        "Clk_BUFGP/BUFG";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
+

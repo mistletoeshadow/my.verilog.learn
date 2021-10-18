@@ -1,0 +1,11 @@
+[Inputs]
+Clk
+Rst_n
+Rs232_Rx
+[Outputs]
+Led
+Rs232_Tx
+[BiDir]
+[ATTRIBUTES]
+VeriModel uart_top
+
