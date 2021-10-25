@@ -1,0 +1,867 @@
+Release 14.7 Map P.20131013 (nt)
+Xilinx Mapping Report File for Design 'ram_top'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol
+high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off
+-pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -2
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon Oct 25 10:22:57 2021
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    6
+Slice Logic Utilization:
+  Number of Slice Registers:                     0 out of  18,224    0%
+  Number of Slice LUTs:                          0 out of   9,112    0%
+
+Slice Logic Distribution:
+  Number of occupied Slices:                     0 out of   2,278    0%
+  Number of MUXCYs used:                         0 out of   4,556    0%
+  Number of LUT Flip Flop pairs used:            0
+
+IO Utilization:
+  Number of bonded IOBs:                         3 out of     232    1%
+    Number of LOCed IOBs:                        3 out of       3  100%
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          0 out of      64    0%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       0 out of      16    0%
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   0 out of     248    0%
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Peak Memory Usage:  326 MB
+Total REAL time to MAP completion:  7 secs 
+Total CPU time to MAP completion:   4 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:MapLib:701 - Signal rst_n connected to top level port rst_n has been
+   removed.
+WARNING:MapLib:701 - Signal key1 connected to top level port key1 has been
+   removed.
+WARNING:MapLib:701 - Signal key2 connected to top level port key2 has been
+   removed.
+WARNING:MapLib:701 - Signal clk connected to top level port clk has been
+   removed.
+WARNING:MapLib:41 - All members of TNM group "sys_clk_pin" have been optimized
+   out of the design.
+WARNING:MapLib:50 - The period specification "TS_sys_clk_pin" has been discarded
+   because the group "sys_clk_pin" has been optimized away.
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network ram256x8_u/douta<255> has no load.
+INFO:LIT:395 - The above info message is repeated 255 more times for the
+   following (max. 5 shown):
+   ram256x8_u/douta<254>,
+   ram256x8_u/douta<253>,
+   ram256x8_u/douta<252>,
+   ram256x8_u/douta<251>,
+   ram256x8_u/douta<250>
+   To see the details of these info messages, please use the -detail switch.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+ 175 block(s) removed
+   2 block(s) optimized away
+ 427 signal(s) removed
+
+Section 5 - Removed Logic
+-------------------------
+
+The trimmed logic report below shows the logic removed from your design due to
+sourceless or loadless signals, and VCC or ground connections.  If the removal
+of a signal or symbol results in the subsequent removal of an additional signal
+or symbol, the message explaining that second removal will be indented.  This
+indentation will be repeated as a chain of related logic is removed.
+
+To quickly locate the original cause for the removal of a chain of logic, look
+above the place where that logic is listed in the trimming report, then locate
+the lines that are least indented (begin at the leftmost edge).
+
+The signal "clk_BUFGP/IBUFG" is sourceless and has been removed.
+ Sourceless block "clk_BUFGP/BUFG" (CKBUF) removed.
+  The signal "clk_BUFGP" is sourceless and has been removed.
+   Sourceless block "ram_ctrl_u/cnt_20ms_0" (FF) removed.
+    The signal "ram_ctrl_u/cnt_20ms<0>" is sourceless and has been removed.
+     Sourceless block "ram_ctrl_u/w_en_GND_3_o_OR_40_o2" (ROM) removed.
+      The signal "ram_ctrl_u/w_en_GND_3_o_OR_40_o2" is sourceless and has been
+removed.
+       Sourceless block "ram_ctrl_u/Mcount_addr_eqn_11" (ROM) removed.
+        The signal "ram_ctrl_u/Mcount_addr_eqn_1" is sourceless and has been removed.
+         Sourceless block "ram_ctrl_u/addr_1" (FF) removed.
+          The signal "ram_ctrl_u/addr<1>" is sourceless and has been removed.
+           Sourceless block "ram_ctrl_u/Mmux_data_in21" (ROM) removed.
+            The signal "ram_in<1>" is sourceless and has been removed.
+           Sourceless block "ram_ctrl_u/_n0042_inv_SW0" (ROM) removed.
+            The signal "N0" is sourceless and has been removed.
+             Sourceless block "ram_ctrl_u/_n0042_inv" (ROM) removed.
+              The signal "ram_ctrl_u/_n0042_inv" is sourceless and has been removed.
+               Sourceless block "ram_ctrl_u/addr_3" (FF) removed.
+                The signal "ram_ctrl_u/addr<3>" is sourceless and has been removed.
+                 Sourceless block "ram_ctrl_u/Mmux_data_in41" (ROM) removed.
+                  The signal "ram_in<3>" is sourceless and has been removed.
+                 Sourceless block "ram_ctrl_u/Mcount_addr_cy<3>_rt" (ROM) removed.
+                  The signal "ram_ctrl_u/Mcount_addr_cy<3>_rt" is sourceless and has been removed.
+                   Sourceless block "ram_ctrl_u/Mcount_addr_cy<3>" (MUX) removed.
+                    The signal "ram_ctrl_u/Mcount_addr_cy<3>" is sourceless and has been removed.
+                     Sourceless block "ram_ctrl_u/Mcount_addr_cy<4>" (MUX) removed.
+                      The signal "ram_ctrl_u/Mcount_addr_cy<4>" is sourceless and has been removed.
+                       Sourceless block "ram_ctrl_u/Mcount_addr_cy<5>" (MUX) removed.
+                        The signal "ram_ctrl_u/Mcount_addr_cy<5>" is sourceless and has been removed.
+                         Sourceless block "ram_ctrl_u/Mcount_addr_cy<6>" (MUX) removed.
+                          The signal "ram_ctrl_u/Mcount_addr_cy<6>" is sourceless and has been removed.
+                           Sourceless block "ram_ctrl_u/Mcount_addr_xor<7>" (XOR) removed.
+                            The signal "ram_ctrl_u/Result<7>" is sourceless and has been removed.
+                             Sourceless block "ram_ctrl_u/addr_7_rstpot" (ROM) removed.
+                              The signal "ram_ctrl_u/addr_7_rstpot" is sourceless and has been removed.
+                               Sourceless block "ram_ctrl_u/addr_7" (FF) removed.
+                                The signal "ram_ctrl_u/addr<7>" is sourceless and has been removed.
+                                 Sourceless block "ram_ctrl_u/Mmux_data_in81" (ROM) removed.
+                                  The signal "ram_in<7>" is sourceless and has been removed.
+                                 Sourceless block "ram_ctrl_u/Mcount_addr_xor<7>_rt" (ROM) removed.
+                                  The signal "ram_ctrl_u/Mcount_addr_xor<7>_rt" is sourceless and has been
+removed.
+                                 Sourceless block "ram_ctrl_u/_n0042_inv_SW2" (ROM) removed.
+                                  The signal "N6" is sourceless and has been removed.
+                                   Sourceless block "ram_ctrl_u/addr_6_rstpot" (ROM) removed.
+                                    The signal "ram_ctrl_u/addr_6_rstpot" is sourceless and has been removed.
+                                     Sourceless block "ram_ctrl_u/addr_6" (FF) removed.
+                                      The signal "ram_ctrl_u/addr<6>" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/Mmux_data_in71" (ROM) removed.
+                                        The signal "ram_in<6>" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/Mcount_addr_cy<6>_rt" (ROM) removed.
+                                        The signal "ram_ctrl_u/Mcount_addr_cy<6>_rt" is sourceless and has been removed.
+                                         Sourceless block "ram_ctrl_u/Mcount_addr_xor<6>" (XOR) removed.
+                                          The signal "ram_ctrl_u/Result<6>" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/_n0042_inv_SW1" (ROM) removed.
+                                        The signal "N4" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/_n0042_inv_SW3" (ROM) removed.
+                                        The signal "N8" is sourceless and has been removed.
+                                         Sourceless block "ram_ctrl_u/addr_5_rstpot" (ROM) removed.
+                                          The signal "ram_ctrl_u/addr_5_rstpot" is sourceless and has been removed.
+                                           Sourceless block "ram_ctrl_u/addr_5" (FF) removed.
+                                            The signal "ram_ctrl_u/addr<5>" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/Mmux_data_in61" (ROM) removed.
+                                              The signal "ram_in<5>" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/Mcount_addr_cy<5>_rt" (ROM) removed.
+                                              The signal "ram_ctrl_u/Mcount_addr_cy<5>_rt" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/Mcount_addr_xor<5>" (XOR) removed.
+                                                The signal "ram_ctrl_u/Result<5>" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/_n0042_inv_SW4" (ROM) removed.
+                                              The signal "N10" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/addr_4_rstpot" (ROM) removed.
+                                                The signal "ram_ctrl_u/addr_4_rstpot" is sourceless and has been removed.
+                                                 Sourceless block "ram_ctrl_u/addr_4" (FF) removed.
+*The signal "ram_ctrl_u/addr<4>" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/Mmux_data_in51" (ROM) removed.
+*  The signal "ram_in<4>" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/Mcount_addr_cy<4>_rt" (ROM) removed.
+*  The signal "ram_ctrl_u/Mcount_addr_cy<4>_rt" is sourceless and has been removed.
+*   Sourceless block "ram_ctrl_u/Mcount_addr_xor<4>" (XOR) removed.
+*    The signal "ram_ctrl_u/Result<4>" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/addr_0_rstpot" (ROM) removed.
+                                                The signal "ram_ctrl_u/addr_0_rstpot" is sourceless and has been removed.
+                                                 Sourceless block "ram_ctrl_u/addr_0" (FF) removed.
+*The signal "ram_ctrl_u/addr<0>" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/Mmux_data_in11" (ROM) removed.
+*  The signal "ram_in<0>" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/Mcount_addr_lut<0>_INV_0" (BUF) removed.
+*  The signal "ram_ctrl_u/Mcount_addr_lut<0>" is sourceless and has been removed.
+*   Sourceless block "ram_ctrl_u/Mcount_addr_cy<0>" (MUX) removed.
+*    The signal "ram_ctrl_u/Mcount_addr_cy<0>" is sourceless and has been removed.
+*     Sourceless block "ram_ctrl_u/Mcount_addr_cy<1>" (MUX) removed.
+*      The signal "ram_ctrl_u/Mcount_addr_cy<1>" is sourceless and has been removed.
+*       Sourceless block "ram_ctrl_u/Mcount_addr_cy<2>" (MUX) removed.
+*        The signal "ram_ctrl_u/Mcount_addr_cy<2>" is sourceless and has been removed.
+*         Sourceless block "ram_ctrl_u/Mcount_addr_xor<3>" (XOR) removed.
+*          The signal "ram_ctrl_u/Result<3>" is sourceless and has been removed.
+*           Sourceless block "ram_ctrl_u/Mcount_addr_eqn_31" (ROM) removed.
+*            The signal "ram_ctrl_u/Mcount_addr_eqn_3" is sourceless and has been removed.
+*       Sourceless block "ram_ctrl_u/Mcount_addr_xor<2>" (XOR) removed.
+*        The signal "ram_ctrl_u/Result<2>" is sourceless and has been removed.
+*         Sourceless block "ram_ctrl_u/Mcount_addr_eqn_21" (ROM) removed.
+*          The signal "ram_ctrl_u/Mcount_addr_eqn_2" is sourceless and has been removed.
+*           Sourceless block "ram_ctrl_u/addr_2" (FF) removed.
+*            The signal "ram_ctrl_u/addr<2>" is sourceless and has been removed.
+*             Sourceless block "ram_ctrl_u/Mmux_data_in31" (ROM) removed.
+*              The signal "ram_in<2>" is sourceless and has been removed.
+*             Sourceless block "ram_ctrl_u/Mcount_addr_cy<2>_rt" (ROM) removed.
+*              The signal "ram_ctrl_u/Mcount_addr_cy<2>_rt" is sourceless and has been removed.
+*     Sourceless block "ram_ctrl_u/Mcount_addr_xor<1>" (XOR) removed.
+*      The signal "ram_ctrl_u/Result<1>" is sourceless and has been removed.
+*   Sourceless block "ram_ctrl_u/Mcount_addr_xor<0>" (XOR) removed.
+*    The signal "ram_ctrl_u/Result<0>" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/w_en_rstpot_G" (ROM) removed.
+                                              The signal "N25" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/w_en_rstpot" (MUX) removed.
+                                                The signal "ram_ctrl_u/w_en_rstpot" is sourceless and has been removed.
+                                                 Sourceless block "ram_ctrl_u/w_en" (FF) removed.
+*The signal "ram_ctrl_u/w_en" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/w_en_rstpot_F" (ROM) removed.
+*  The signal "N24" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/w_en_GND_3_o_OR_40_o5" (ROM) removed.
+*  The signal "ram_ctrl_u/w_en_GND_3_o_OR_40_o" is sourceless and has been removed.
+           Sourceless block "ram_ctrl_u/Mcount_addr_cy<1>_rt" (ROM) removed.
+            The signal "ram_ctrl_u/Mcount_addr_cy<1>_rt" is sourceless and has been removed.
+     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<0>" (ROM) removed.
+      The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<0>" is sourceless and has been
+removed.
+       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<0>" (MUX) removed.
+        The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<0>" is sourceless and has been
+removed.
+         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<1>" (MUX) removed.
+          The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<1>" is sourceless and has been
+removed.
+           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<2>" (MUX) removed.
+            The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<2>" is sourceless and has been
+removed.
+             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<3>" (MUX) removed.
+              The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<3>" is sourceless and has been
+removed.
+               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<4>" (MUX) removed.
+                The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<4>" is sourceless and has been
+removed.
+                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<5>" (MUX) removed.
+                  The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<5>" is sourceless and has been
+removed.
+                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<6>" (MUX) removed.
+                    The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<6>" is sourceless and has been
+removed.
+                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<7>" (MUX) removed.
+                      The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<7>" is sourceless and has been
+removed.
+                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<8>" (MUX) removed.
+                        The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<8>" is sourceless and has been
+removed.
+                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<9>" (MUX) removed.
+                          The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<9>" is sourceless and has been
+removed.
+                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<10>" (MUX) removed.
+                            The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<10>" is sourceless and has been
+removed.
+                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<11>" (MUX) removed.
+                              The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<11>" is sourceless and has been
+removed.
+                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<12>" (MUX) removed.
+                                The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<12>" is sourceless and has been
+removed.
+                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<13>" (MUX) removed.
+                                  The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<13>" is sourceless and has been
+removed.
+                                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<14>" (MUX) removed.
+                                    The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<14>" is sourceless and has been
+removed.
+                                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<15>" (MUX) removed.
+                                      The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<15>" is sourceless and has been
+removed.
+                                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<16>" (MUX) removed.
+                                        The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<16>" is sourceless and has been
+removed.
+                                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<17>" (MUX) removed.
+                                          The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<17>" is sourceless and has been
+removed.
+                                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<18>" (MUX) removed.
+                                            The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<18>" is sourceless and has been
+removed.
+                                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<19>" (MUX) removed.
+                                              The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<19>" is sourceless and has been
+removed.
+                                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<20>" (MUX) removed.
+                                                The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<20>" is sourceless and has been
+removed.
+                                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<21>" (MUX) removed.
+*The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<21>" is sourceless and has been
+removed.
+* Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_cy<22>" (MUX) removed.
+*  The signal "ram_ctrl_u/Mcount_cnt_20ms_cy<22>" is sourceless and has been
+removed.
+*   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<23>" (XOR) removed.
+*    The signal "ram_ctrl_u/Mcount_cnt_20ms23" is sourceless and has been removed.
+*     Sourceless block "ram_ctrl_u/cnt_20ms_23" (FF) removed.
+*      The signal "ram_ctrl_u/cnt_20ms<23>" is sourceless and has been removed.
+*       Sourceless block "ram_ctrl_u/w_en_GND_3_o_OR_40_o4" (ROM) removed.
+*        The signal "ram_ctrl_u/w_en_GND_3_o_OR_40_o4" is sourceless and has been
+removed.
+*       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<23>" (ROM) removed.
+*        The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<23>" is sourceless and has been
+removed.
+* Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<22>" (XOR) removed.
+*  The signal "ram_ctrl_u/Mcount_cnt_20ms22" is sourceless and has been removed.
+*   Sourceless block "ram_ctrl_u/cnt_20ms_22" (FF) removed.
+*    The signal "ram_ctrl_u/cnt_20ms<22>" is sourceless and has been removed.
+*     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<22>" (ROM) removed.
+*      The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<22>" is sourceless and has been
+removed.
+                                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<21>" (XOR) removed.
+*The signal "ram_ctrl_u/Mcount_cnt_20ms21" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/cnt_20ms_21" (FF) removed.
+*  The signal "ram_ctrl_u/cnt_20ms<21>" is sourceless and has been removed.
+*   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<21>" (ROM) removed.
+*    The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<21>" is sourceless and has been
+removed.
+                                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<20>" (XOR) removed.
+                                                The signal "ram_ctrl_u/Mcount_cnt_20ms20" is sourceless and has been removed.
+                                                 Sourceless block "ram_ctrl_u/cnt_20ms_20" (FF) removed.
+*The signal "ram_ctrl_u/cnt_20ms<20>" is sourceless and has been removed.
+* Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<20>" (ROM) removed.
+*  The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<20>" is sourceless and has been
+removed.
+                                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<19>" (XOR) removed.
+                                              The signal "ram_ctrl_u/Mcount_cnt_20ms19" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/cnt_20ms_19" (FF) removed.
+                                                The signal "ram_ctrl_u/cnt_20ms<19>" is sourceless and has been removed.
+                                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<19>" (ROM) removed.
+*The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<19>" is sourceless and has been
+removed.
+                                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<18>" (XOR) removed.
+                                            The signal "ram_ctrl_u/Mcount_cnt_20ms18" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/cnt_20ms_18" (FF) removed.
+                                              The signal "ram_ctrl_u/cnt_20ms<18>" is sourceless and has been removed.
+                                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<18>" (ROM) removed.
+                                                The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<18>" is sourceless and has been
+removed.
+                                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<17>" (XOR) removed.
+                                          The signal "ram_ctrl_u/Mcount_cnt_20ms17" is sourceless and has been removed.
+                                           Sourceless block "ram_ctrl_u/cnt_20ms_17" (FF) removed.
+                                            The signal "ram_ctrl_u/cnt_20ms<17>" is sourceless and has been removed.
+                                             Sourceless block "ram_ctrl_u/w_en_GND_3_o_OR_40_o3" (ROM) removed.
+                                              The signal "ram_ctrl_u/w_en_GND_3_o_OR_40_o3" is sourceless and has been
+removed.
+                                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<17>" (ROM) removed.
+                                              The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<17>" is sourceless and has been
+removed.
+                                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<16>" (XOR) removed.
+                                        The signal "ram_ctrl_u/Mcount_cnt_20ms16" is sourceless and has been removed.
+                                         Sourceless block "ram_ctrl_u/cnt_20ms_16" (FF) removed.
+                                          The signal "ram_ctrl_u/cnt_20ms<16>" is sourceless and has been removed.
+                                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<16>" (ROM) removed.
+                                            The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<16>" is sourceless and has been
+removed.
+                                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<15>" (XOR) removed.
+                                      The signal "ram_ctrl_u/Mcount_cnt_20ms15" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/cnt_20ms_15" (FF) removed.
+                                        The signal "ram_ctrl_u/cnt_20ms<15>" is sourceless and has been removed.
+                                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<15>" (ROM) removed.
+                                          The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<15>" is sourceless and has been
+removed.
+                                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<14>" (XOR) removed.
+                                    The signal "ram_ctrl_u/Mcount_cnt_20ms14" is sourceless and has been removed.
+                                     Sourceless block "ram_ctrl_u/cnt_20ms_14" (FF) removed.
+                                      The signal "ram_ctrl_u/cnt_20ms<14>" is sourceless and has been removed.
+                                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<14>" (ROM) removed.
+                                        The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<14>" is sourceless and has been
+removed.
+                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<13>" (XOR) removed.
+                                  The signal "ram_ctrl_u/Mcount_cnt_20ms13" is sourceless and has been removed.
+                                   Sourceless block "ram_ctrl_u/cnt_20ms_13" (FF) removed.
+                                    The signal "ram_ctrl_u/cnt_20ms<13>" is sourceless and has been removed.
+                                     Sourceless block "ram_ctrl_u/w_en_GND_3_o_OR_40_o1" (ROM) removed.
+                                      The signal "ram_ctrl_u/w_en_GND_3_o_OR_40_o1" is sourceless and has been
+removed.
+                                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<13>" (ROM) removed.
+                                      The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<13>" is sourceless and has been
+removed.
+                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<12>" (XOR) removed.
+                                The signal "ram_ctrl_u/Mcount_cnt_20ms12" is sourceless and has been removed.
+                                 Sourceless block "ram_ctrl_u/cnt_20ms_12" (FF) removed.
+                                  The signal "ram_ctrl_u/cnt_20ms<12>" is sourceless and has been removed.
+                                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<12>" (ROM) removed.
+                                    The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<12>" is sourceless and has been
+removed.
+                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<11>" (XOR) removed.
+                              The signal "ram_ctrl_u/Mcount_cnt_20ms11" is sourceless and has been removed.
+                               Sourceless block "ram_ctrl_u/cnt_20ms_11" (FF) removed.
+                                The signal "ram_ctrl_u/cnt_20ms<11>" is sourceless and has been removed.
+                                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<11>" (ROM) removed.
+                                  The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<11>" is sourceless and has been
+removed.
+                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<10>" (XOR) removed.
+                            The signal "ram_ctrl_u/Mcount_cnt_20ms10" is sourceless and has been removed.
+                             Sourceless block "ram_ctrl_u/cnt_20ms_10" (FF) removed.
+                              The signal "ram_ctrl_u/cnt_20ms<10>" is sourceless and has been removed.
+                               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<10>" (ROM) removed.
+                                The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<10>" is sourceless and has been
+removed.
+                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<9>" (XOR) removed.
+                          The signal "ram_ctrl_u/Mcount_cnt_20ms9" is sourceless and has been removed.
+                           Sourceless block "ram_ctrl_u/cnt_20ms_9" (FF) removed.
+                            The signal "ram_ctrl_u/cnt_20ms<9>" is sourceless and has been removed.
+                             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<9>" (ROM) removed.
+                              The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<9>" is sourceless and has been
+removed.
+                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<8>" (XOR) removed.
+                        The signal "ram_ctrl_u/Mcount_cnt_20ms8" is sourceless and has been removed.
+                         Sourceless block "ram_ctrl_u/cnt_20ms_8" (FF) removed.
+                          The signal "ram_ctrl_u/cnt_20ms<8>" is sourceless and has been removed.
+                           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<8>" (ROM) removed.
+                            The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<8>" is sourceless and has been
+removed.
+                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<7>" (XOR) removed.
+                      The signal "ram_ctrl_u/Mcount_cnt_20ms7" is sourceless and has been removed.
+                       Sourceless block "ram_ctrl_u/cnt_20ms_7" (FF) removed.
+                        The signal "ram_ctrl_u/cnt_20ms<7>" is sourceless and has been removed.
+                         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<7>" (ROM) removed.
+                          The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<7>" is sourceless and has been
+removed.
+                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<6>" (XOR) removed.
+                    The signal "ram_ctrl_u/Mcount_cnt_20ms6" is sourceless and has been removed.
+                     Sourceless block "ram_ctrl_u/cnt_20ms_6" (FF) removed.
+                      The signal "ram_ctrl_u/cnt_20ms<6>" is sourceless and has been removed.
+                       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<6>" (ROM) removed.
+                        The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<6>" is sourceless and has been
+removed.
+                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<5>" (XOR) removed.
+                  The signal "ram_ctrl_u/Mcount_cnt_20ms5" is sourceless and has been removed.
+                   Sourceless block "ram_ctrl_u/cnt_20ms_5" (FF) removed.
+                    The signal "ram_ctrl_u/cnt_20ms<5>" is sourceless and has been removed.
+                     Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<5>" (ROM) removed.
+                      The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<5>" is sourceless and has been
+removed.
+               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<4>" (XOR) removed.
+                The signal "ram_ctrl_u/Mcount_cnt_20ms4" is sourceless and has been removed.
+                 Sourceless block "ram_ctrl_u/cnt_20ms_4" (FF) removed.
+                  The signal "ram_ctrl_u/cnt_20ms<4>" is sourceless and has been removed.
+                   Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<4>" (ROM) removed.
+                    The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<4>" is sourceless and has been
+removed.
+             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<3>" (XOR) removed.
+              The signal "ram_ctrl_u/Mcount_cnt_20ms3" is sourceless and has been removed.
+               Sourceless block "ram_ctrl_u/cnt_20ms_3" (FF) removed.
+                The signal "ram_ctrl_u/cnt_20ms<3>" is sourceless and has been removed.
+                 Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<3>" (ROM) removed.
+                  The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<3>" is sourceless and has been
+removed.
+           Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<2>" (XOR) removed.
+            The signal "ram_ctrl_u/Mcount_cnt_20ms2" is sourceless and has been removed.
+             Sourceless block "ram_ctrl_u/cnt_20ms_2" (FF) removed.
+              The signal "ram_ctrl_u/cnt_20ms<2>" is sourceless and has been removed.
+               Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<2>" (ROM) removed.
+                The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<2>" is sourceless and has been
+removed.
+         Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<1>" (XOR) removed.
+          The signal "ram_ctrl_u/Mcount_cnt_20ms1" is sourceless and has been removed.
+           Sourceless block "ram_ctrl_u/cnt_20ms_1" (FF) removed.
+            The signal "ram_ctrl_u/cnt_20ms<1>" is sourceless and has been removed.
+             Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_lut<1>" (ROM) removed.
+              The signal "ram_ctrl_u/Mcount_cnt_20ms_lut<1>" is sourceless and has been
+removed.
+       Sourceless block "ram_ctrl_u/Mcount_cnt_20ms_xor<0>" (XOR) removed.
+        The signal "ram_ctrl_u/Mcount_cnt_20ms" is sourceless and has been removed.
+   Sourceless block "ram_ctrl_u/rd_flag" (FF) removed.
+    The signal "ram_ctrl_u/rd_flag" is sourceless and has been removed.
+     Sourceless block "ram_ctrl_u/rd_flag_rstpot" (ROM) removed.
+      The signal "ram_ctrl_u/rd_flag_rstpot" is sourceless and has been removed.
+The signal "ram256x8_u/douta<255>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<254>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<253>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<252>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<251>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<250>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<249>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<248>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<247>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<246>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<245>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<244>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<243>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<242>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<241>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<240>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<239>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<238>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<237>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<236>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<235>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<234>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<233>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<232>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<231>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<230>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<229>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<228>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<227>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<226>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<225>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<224>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<223>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<222>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<221>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<220>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<219>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<218>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<217>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<216>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<215>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<214>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<213>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<212>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<211>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<210>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<209>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<208>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<207>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<206>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<205>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<204>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<203>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<202>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<201>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<200>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<199>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<198>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<197>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<196>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<195>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<194>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<193>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<192>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<191>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<190>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<189>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<188>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<187>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<186>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<185>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<184>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<183>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<182>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<181>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<180>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<179>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<178>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<177>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<176>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<175>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<174>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<173>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<172>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<171>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<170>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<169>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<168>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<167>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<166>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<165>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<164>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<163>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<162>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<161>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<160>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<159>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<158>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<157>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<156>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<155>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<154>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<153>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<152>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<151>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<150>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<149>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<148>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<147>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<146>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<145>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<144>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<143>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<142>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<141>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<140>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<139>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<138>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<137>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<136>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<135>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<134>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<133>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<132>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<131>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<130>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<129>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<128>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<127>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<126>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<125>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<124>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<123>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<122>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<121>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<120>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<119>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<118>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<117>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<116>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<115>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<114>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<113>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<112>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<111>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<110>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<109>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<108>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<107>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<106>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<105>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<104>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<103>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<102>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<101>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<100>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<99>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<98>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<97>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<96>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<95>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<94>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<93>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<92>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<91>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<90>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<89>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<88>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<87>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<86>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<85>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<84>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<83>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<82>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<81>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<80>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<79>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<78>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<77>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<76>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<75>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<74>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<73>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<72>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<71>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<70>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<69>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<68>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<67>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<66>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<65>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<64>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<63>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<62>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<61>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<60>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<59>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<58>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<57>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<56>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<55>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<54>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<53>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<52>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<51>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<50>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<49>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<48>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<47>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<46>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<45>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<44>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<43>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<42>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<41>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<40>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<39>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<38>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<37>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<36>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<35>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<34>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<33>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<32>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<31>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<30>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<29>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<28>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<27>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<26>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<25>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<24>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<23>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<22>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<21>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<20>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<19>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<18>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<17>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<16>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<15>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<14>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<13>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<12>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<11>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<10>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<9>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<8>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<7>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<6>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<5>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<4>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<3>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<2>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<1>" is sourceless and has been removed.
+The signal "ram256x8_u/douta<0>" is sourceless and has been removed.
+The signal "ram256x8_u/N0" is sourceless and has been removed.
+The signal "ram256x8_u/N1" is sourceless and has been removed.
+
+The trimmed logic reported below is either:
+   1. part of a cycle
+   2. part of disabled logic
+   3. a side-effect of other trimmed logic
+
+The signal "rst_n_IBUF" is unused and has been removed.
+ Unused block "rst_n_IBUF" (BUF) removed.
+  The signal "rst_n" is unused and has been removed.
+   Unused block "rst_n" (PAD) removed.
+The signal "key1_IBUF" is unused and has been removed.
+ Unused block "key1_IBUF" (BUF) removed.
+  The signal "key1" is unused and has been removed.
+   Unused block "key1" (PAD) removed.
+The signal "key2_IBUF" is unused and has been removed.
+ Unused block "key2_IBUF" (BUF) removed.
+  The signal "key2" is unused and has been removed.
+   Unused block "key2" (PAD) removed.
+The signal "ram_ctrl_u/rst_n_inv" is unused and has been removed.
+ Unused block "ram_ctrl_u/rst_n_inv1_INV_0" (BUF) removed.
+The signal "clk" is unused and has been removed.
+ Unused block "clk" (PAD) removed.
+Unused block "clk_BUFGP/IBUFG" (CKBUF) removed.
+Unused block
+"ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ra
+mloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block
+"ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ra
+mloop[1].ram.r/s6_noinit.ram/SP.WIDE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block
+"ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ra
+mloop[2].ram.r/s6_noinit.ram/SP.WIDE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block
+"ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ra
+mloop[3].ram.r/s6_noinit.ram/SP.WIDE_PRIM18.ram" (RAMB16BWER) removed.
+Unused block "ram256x8_u/XST_GND" (ZERO) removed.
+Unused block "ram256x8_u/XST_VCC" (ONE) removed.
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| rs232_tx                           | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| state_led                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| tx_done                            | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+Use the "-detail" map option to print out Configuration Strings
+
+Section 12 - Control Set Information
+------------------------------------
+Use the "-detail" map option to print out Control Set Information.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
+Use the "-detail" map option to print out the Utilization by Hierarchy section.

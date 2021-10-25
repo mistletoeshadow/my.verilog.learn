@@ -1,0 +1,7 @@
+verilog work "../../rtl/uart_byte_tx.v"
+verilog work "../../rtl/ram_ctrl.v"
+verilog work "../../rtl/key_filter.v"
+verilog work "ipcore_dir/ram256x8.v"
+verilog work "../../rtl/ram_top.v"
+verilog work "../../sim/tb/ram_tb.v"
+verilog work "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

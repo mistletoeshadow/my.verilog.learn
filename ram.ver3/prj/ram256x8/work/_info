@@ -1,0 +1,130 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8
+vglbl
+Z1 !s110 1635144592
+!i10b 1
+!s100 UlJ]9LUWO:ZWoRO62F9fW3
+Ioomo419KTgOYgh5`ZRmg>0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1381681120
+8F:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+FF:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v
+L0 5
+Z3 OL;L;10.4;61
+r1
+!s85 0
+31
+!s108 1635144592.809000
+!s107 F:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!s90 -reportprogress|300|F:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v|
+!i113 1
+Z4 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+vram
+!s110 1635145515
+!i10b 1
+!s100 MQga?C4S^9Njh39bZDC;A0
+IlRGIjU[Eek?c`Qo8ZjPKA3
+R2
+R0
+w1635145483
+8E:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v
+FE:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v
+L0 25
+R3
+r1
+!s85 0
+31
+!s108 1635145515.082000
+!s107 E:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v|
+!s90 -reportprogress|300|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|E:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v|
+!i113 1
+R4
+vram256x8
+R1
+!i10b 1
+!s100 ]WI9k4X4ezkdWDc>Aa5kU0
+IkhSg8;e?^aKc0bWCbAeHK0
+R2
+R0
+w1635130433
+8ipcore_dir/ram256x8.v
+Fipcore_dir/ram256x8.v
+L0 39
+R3
+r1
+!s85 0
+31
+!s108 1635144592.663000
+!s107 ipcore_dir/ram256x8.v|
+!s90 -reportprogress|300|ipcore_dir/ram256x8.v|
+!i113 1
+R4
+vram_ctrl
+R1
+!i10b 1
+!s100 =0PH_nDjT3E=[kAFHb5DM2
+IKlWjXFI3knUX`iJU1APEU0
+R2
+R0
+w1635144516
+8../../rtl/ram_ctrl.v
+F../../rtl/ram_ctrl.v
+Z5 L0 21
+R3
+r1
+!s85 0
+31
+!s108 1635144592.617000
+!s107 ../../rtl/ram_ctrl.v|
+!s90 -reportprogress|300|../../rtl/ram_ctrl.v|
+!i113 1
+R4
+vram_top
+R1
+!i10b 1
+!s100 EFC_a815WUh9z72DDN54L3
+I>LEMAo`@g;_Emc0gfjHfP3
+R2
+R0
+w1635130552
+8../../rtl/ram_top.v
+F../../rtl/ram_top.v
+R5
+R3
+r1
+!s85 0
+31
+!s108 1635144592.717000
+!s107 ../../rtl/ram_top.v|
+!s90 -reportprogress|300|../../rtl/ram_top.v|
+!i113 1
+R4
+vuart_byte_tx
+R1
+!i10b 1
+!s100 EIQFKh8l55MLIC^?1Pia@2
+IoAX5C@0[5]896B<nRmQ2b1
+R2
+R0
+w1634891390
+8../../rtl/uart_byte_tx.v
+F../../rtl/uart_byte_tx.v
+L0 3
+R3
+r1
+!s85 0
+31
+!s108 1635144592.567000
+!s107 ../../rtl/uart_byte_tx.v|
+!s90 -reportprogress|300|../../rtl/uart_byte_tx.v|
+!i113 1
+R4

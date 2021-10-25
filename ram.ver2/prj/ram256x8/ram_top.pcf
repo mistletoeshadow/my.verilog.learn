@@ -1,0 +1,10 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 25 10:23:04 2021
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "tx_done" LOCATE = SITE "T4" LEVEL 1;
+COMP "rs232_tx" LOCATE = SITE "C4" LEVEL 1;
+COMP "state_led" LOCATE = SITE "V5" LEVEL 1;
+SCHEMATIC END;
+

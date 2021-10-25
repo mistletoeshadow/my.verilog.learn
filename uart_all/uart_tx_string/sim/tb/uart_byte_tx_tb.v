@@ -26,7 +26,7 @@ module uart_byte_tx_tb;
 	);
 	
 	initial clk = 1;
-	always#(`clk_period/2)clk = ~clk;
+	always#(`clk_period/2) clk = ~clk;
 	
 	initial begin
 		rst_n = 1'b0;

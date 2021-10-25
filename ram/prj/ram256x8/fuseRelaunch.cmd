@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/FPGA/my.verilog.learn/ram/prj/ram256x8/ram_isim_beh.exe" -prj "E:/FPGA/my.verilog.learn/ram/prj/ram256x8/ram_beh.prj" "work.ram" "work.glbl" 

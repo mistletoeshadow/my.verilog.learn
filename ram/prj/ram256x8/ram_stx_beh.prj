@@ -1,0 +1,6 @@
+verilog isim_temp "../../rtl/uart_byte_tx.v"
+verilog isim_temp "../../rtl/ram_ctrl.v"
+verilog isim_temp "../../rtl/key_filter.v"
+verilog isim_temp "../../rtl/ram_top.v"
+verilog isim_temp "../../sim/tb/ram_tb.v"
+verilog isim_temp "F:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

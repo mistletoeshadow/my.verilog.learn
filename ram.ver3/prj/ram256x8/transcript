@@ -1,0 +1,126 @@
+# Reading F:/modeltech64_10.4/tcl/vsim/pref.tcl
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# do {ram.fdo}
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 ../../rtl/uart_byte_tx.v 
+# -- Compiling module uart_byte_tx
+# 
+# Top level modules:
+# 	uart_byte_tx
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 ../../rtl/ram_ctrl.v 
+# -- Compiling module ram_ctrl
+# 
+# Top level modules:
+# 	ram_ctrl
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 ipcore_dir/ram256x8.v 
+# -- Compiling module ram256x8
+# 
+# Top level modules:
+# 	ram256x8
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 ../../rtl/ram_top.v 
+# -- Compiling module ram_top
+# 
+# Top level modules:
+# 	ram_top
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 ../../sim/tb/ram_tb.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 14:49:52 on Oct 25,2021
+# vlog -reportprogress 300 F:/Xilinx/14.7/ISE_DS/ISE/verilog/src/glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 14:49:52 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -gui -do "do {ram.fdo}" 
+# Start time: 14:49:52 on Oct 25,2021
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# Loading work.ram
+# Loading work.ram_top
+# Loading work.ram256x8
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3
+# Loading work.ram_ctrl
+# Loading work.uart_byte_tx
+# Loading work.glbl
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_mem_module
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_output_stage
+# Loading xilinxcorelib_ver.BLK_MEM_GEN_V7_3_softecc_output_reg_stage
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: DELL  Hostname: DESKTOP-PAUGPPT  ProcessID: 15044
+# 
+#           Attempting to use alternate WLF file "./wlftkga5q6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftkga5q6
+# 
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# Block Memory Generator CORE Generator module ram.uut.ram256x8_u.inst.native_mem_module.blk_mem_gen_v7_3_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+add wave -position end  sim:/ram/uut/w_en
+add wave -position end  sim:/ram/uut/ram_ctrl_u/rd_flag
+add wave -position end  sim:/ram/uut/ram_ctrl_u/cnt_20ms
+add wave -position end  sim:/ram/uut/ram_ctrl_u/clk_read
+run
+add wave -position 3  sim:/ram/uut/ram_ctrl_u/addr
+add wave -position 4  sim:/ram/uut/ram_ctrl_u/data_in
+add wave -position 3  sim:/ram/uut/ram256x8_u/addra
+add wave -position 4  sim:/ram/uut/ram256x8_u/dina
+add wave -position end  sim:/ram/uut/ram256x8_u/douta
+add wave -position end  sim:/ram/uut/uart_byte_tx_u/data_byte
+add wave -position end  sim:/ram/uut/uart_byte_tx_u/tx
+run
+vlog -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v
+# Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+# Start time: 15:05:15 on Oct 25,2021
+# vlog -reportprogress 300 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact E:/FPGA/my.verilog.learn/ram.ver3/sim/tb/ram_tb.v 
+# -- Compiling module ram
+# 
+# Top level modules:
+# 	ram
+# End time: 15:05:15 on Oct 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run -all
+# ** Note: $stop    : ../../sim/tb/ram_tb.v(70)
+#    Time: 30006800 ns  Iteration: 0  Instance: /ram
+# Break in Module ram at ../../sim/tb/ram_tb.v line 70

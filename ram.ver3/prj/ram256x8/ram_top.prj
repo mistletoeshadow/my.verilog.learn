@@ -1,0 +1,4 @@
+verilog work "../../rtl/uart_byte_tx.v"
+verilog work "../../rtl/ram_ctrl.v"
+verilog work "ipcore_dir/ram256x8.v"
+verilog work "../../rtl/ram_top.v"

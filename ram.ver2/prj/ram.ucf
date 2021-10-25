@@ -1,0 +1,30 @@
+NET clk LOC = V10 | TNM_NET = sys_clk_pin | IOSTANDARD = "LVCMOS33";
+TIMESPEC TS_sys_clk_pin = PERIOD sys_clk_pin 50000 kHz;
+##
+
+
+##
+NET rst_n                 LOC = N4 | IOSTANDARD = "LVCMOS15";       ## reset pushbutton
+
+##################################################################################
+#LED Pin define
+##################################################################################
+NET state_led                LOC = V5 | IOSTANDARD = "LVCMOS33";       ## LED1
+#NET led<1>                LOC = R3 | IOSTANDARD = "LVCMOS33";       ## LED2
+#NET led<2>                LOC = T3 | IOSTANDARD = "LVCMOS33";       ## LED3
+NET tx_done                LOC = T4 | IOSTANDARD = "LVCMOS33";       ## LED4
+##################################################################################
+#KEY Pin define
+##################################################################################
+NET key1               LOC = P7 | IOSTANDARD = "LVCMOS33";       ## KEY1
+NET key2                LOC = R5 | IOSTANDARD = "LVCMOS33";       ## KEY2
+#NET key<2>                LOC = T5 | IOSTANDARD = "LVCMOS33";       ## KEY3
+#NET key<3>                LOC = U5 | IOSTANDARD = "LVCMOS33";       ## KEY4
+
+##################################################################################
+
+##################################################################################
+#USB Serial RS232 Pin define
+##################################################################################
+#NET uart_rx               LOC = B2 | IOSTANDARD = "LVCMOS33";   	## Uart RXD:U4_TXD
+NET rs232_tx               LOC = C4 | IOSTANDARD = "LVCMOS33"; 	    ## Uart TXD:U4_RXD
