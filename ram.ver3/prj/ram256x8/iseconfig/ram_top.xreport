@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-10-25T11:03:45</DateModified>
+  <DateModified>2021-11-01T19:23:11</DateModified>
   <ModuleName>ram_top</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2021-11-01T19:16:39</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/iseconfig/ram_top.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8\</ImplementationReportsDirectory>
   <DateInitialized>2021-10-25T10:52:09</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

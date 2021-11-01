@@ -2,7 +2,8 @@ Release 14.7 ngdbuild P.20131013 (nt)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: F:\Xilinx\14.7\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
-ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-2 ram_top.ngc
+ise -dd _ngo -sd ipcore_dir -nt timestamp -uc
+E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf -p xc6slx16-csg324-2 ram_top.ngc
 ram_top.ngd
 
 Reading NGO file "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.ngc"
@@ -11,6 +12,8 @@ Loading design module "ipcore_dir/ram256x8.ngc"...
 Gathering constraint information from source properties...
 Done.
 
+Annotating constraints to design from ucf file
+"E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf" ...
 Resolving constraint associations...
 Checking Constraint Associations...
 Done...
@@ -28,7 +31,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 134852 kilobytes
+Total memory usage is 134464 kilobytes
 
 Writing NGD file "ram_top.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=E:\FPGA\my.verilog.learn\ram.ver3\prj\impact.xsl
+OUTFILE=E:\FPGA\my.verilog.learn\ram.ver3\prj\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=E:\FPGA\my.verilog.learn\ram.ver3\prj
+LICENSE=iMPACT
+USER_INFO=iMPACT

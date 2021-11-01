@@ -25,18 +25,20 @@ module ram_ctrl(
     input key_2,
 
     output reg       w_en,
+    output reg       clk_read, 
     
     output reg [7:0] addr,
     output reg [7:0] data_in
     );
 
-    reg rd_flag;
-//    reg [23:0] cnt_20ms;          //板级验证使用
-    reg [3:0] cnt_20ms;             //仿真使用
-    reg clk_read;
+    
+    reg [23:0] cnt_20ms;          //板级验证使用
+ //   reg [3:0] cnt_20ms;             //仿真使用
+    
+    reg       rd_flag;
 
-//    parameter cnt_max = 999_999_9;  //0.2s     ,板级验证使用;
-    parameter cnt_max = 9;      //0.2us,    仿真使用；
+    parameter cnt_max = 999_999_9;  //0.2s     ,板级验证使用;
+//    parameter cnt_max = 9;      //0.2us,    仿真使用；
     
     //w_en    写使能信号
     always @(posedge clk or negedge rst_n) begin

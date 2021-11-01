@@ -20,3 +20,42 @@ xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.x
 netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ram_top.ngc ram_top_synthesis.v 
 xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.xst" -ofn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.syr" 
 netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ram_top.ngc ram_top_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.xst" -ofn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim ram_top.ngc ram_top_synthesis.v 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.xst" -ofn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.xst" -ofn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 
+xst -intstyle ise -ifn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.xst" -ofn "E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/ram_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc E:/FPGA/my.verilog.learn/ram.ver3/prj/ram.ucf -p xc6slx16-csg324-2 ram_top.ngc ram_top.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o ram_top_map.ncd ram_top.ngd ram_top.pcf 
+par -w -intstyle ise -ol high -mt off ram_top_map.ncd ram_top.ncd ram_top.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml ram_top.twx ram_top.ncd -o ram_top.twr ram_top.pcf 
+bitgen -intstyle ise -f ram_top.ut ram_top.ncd 

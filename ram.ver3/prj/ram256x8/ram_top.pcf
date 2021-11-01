@@ -1,4 +1,81 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Oct 25 14:42:07 2021
+// Written by: Map P.20131013 on Mon Nov 01 19:23:26 2021
 //! **************************************************************************
+
+SCHEMATIC START;
+COMP "tx_done" LOCATE = SITE "T4" LEVEL 1;
+COMP "key_1" LOCATE = SITE "P7" LEVEL 1;
+COMP "key_2" LOCATE = SITE "R5" LEVEL 1;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "rs232_tx" LOCATE = SITE "C4" LEVEL 1;
+COMP "state_led" LOCATE = SITE "V5" LEVEL 1;
+COMP "rst_n" LOCATE = SITE "N4" LEVEL 1;
+PIN
+        ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>
+        = BEL
+        "ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
+        PINNAME CLKAWRCLK;
+PIN
+        ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>
+        = BEL
+        "ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram"
+        PINNAME CLKBRDCLK;
+TIMEGRP sys_clk_pin = BEL "key_u2/cnt_19" BEL "key_u2/cnt_18" BEL
+        "key_u2/cnt_17" BEL "key_u2/cnt_16" BEL "key_u2/cnt_15" BEL
+        "key_u2/cnt_14" BEL "key_u2/cnt_13" BEL "key_u2/cnt_12" BEL
+        "key_u2/cnt_11" BEL "key_u2/cnt_10" BEL "key_u2/cnt_9" BEL
+        "key_u2/cnt_8" BEL "key_u2/cnt_7" BEL "key_u2/cnt_6" BEL
+        "key_u2/cnt_5" BEL "key_u2/cnt_4" BEL "key_u2/cnt_3" BEL
+        "key_u2/cnt_2" BEL "key_u2/cnt_1" BEL "key_u2/cnt_0" BEL
+        "key_u2/state_FSM_FFd1" BEL "key_u2/state_FSM_FFd2" BEL
+        "key_u2/key_tmpb" BEL "key_u2/key_tmpa" BEL "key_u2/key_in_sb" BEL
+        "key_u2/key_in_sa" BEL "key_u2/cnt_full" BEL "key_u2/en_cnt" BEL
+        "key_u1/cnt_19" BEL "key_u1/cnt_18" BEL "key_u1/cnt_17" BEL
+        "key_u1/cnt_16" BEL "key_u1/cnt_15" BEL "key_u1/cnt_14" BEL
+        "key_u1/cnt_13" BEL "key_u1/cnt_12" BEL "key_u1/cnt_11" BEL
+        "key_u1/cnt_10" BEL "key_u1/cnt_9" BEL "key_u1/cnt_8" BEL
+        "key_u1/cnt_7" BEL "key_u1/cnt_6" BEL "key_u1/cnt_5" BEL
+        "key_u1/cnt_4" BEL "key_u1/cnt_3" BEL "key_u1/cnt_2" BEL
+        "key_u1/cnt_1" BEL "key_u1/cnt_0" BEL "key_u1/state_FSM_FFd1" BEL
+        "key_u1/state_FSM_FFd2" BEL "key_u1/key_tmpb" BEL "key_u1/key_tmpa"
+        BEL "key_u1/key_in_sb" BEL "key_u1/key_in_sa" BEL "key_u1/cnt_full"
+        BEL "key_u1/en_cnt" BEL "ram_ctrl_u/addr_7" BEL "ram_ctrl_u/addr_6"
+        BEL "ram_ctrl_u/addr_5" BEL "ram_ctrl_u/addr_4" BEL
+        "ram_ctrl_u/addr_3" BEL "ram_ctrl_u/addr_2" BEL "ram_ctrl_u/addr_1"
+        BEL "ram_ctrl_u/addr_0" BEL "ram_ctrl_u/cnt_20ms_23" BEL
+        "ram_ctrl_u/cnt_20ms_22" BEL "ram_ctrl_u/cnt_20ms_21" BEL
+        "ram_ctrl_u/cnt_20ms_20" BEL "ram_ctrl_u/cnt_20ms_19" BEL
+        "ram_ctrl_u/cnt_20ms_18" BEL "ram_ctrl_u/cnt_20ms_17" BEL
+        "ram_ctrl_u/cnt_20ms_16" BEL "ram_ctrl_u/cnt_20ms_15" BEL
+        "ram_ctrl_u/cnt_20ms_14" BEL "ram_ctrl_u/cnt_20ms_13" BEL
+        "ram_ctrl_u/cnt_20ms_12" BEL "ram_ctrl_u/cnt_20ms_11" BEL
+        "ram_ctrl_u/cnt_20ms_10" BEL "ram_ctrl_u/cnt_20ms_9" BEL
+        "ram_ctrl_u/cnt_20ms_8" BEL "ram_ctrl_u/cnt_20ms_7" BEL
+        "ram_ctrl_u/cnt_20ms_6" BEL "ram_ctrl_u/cnt_20ms_5" BEL
+        "ram_ctrl_u/cnt_20ms_4" BEL "ram_ctrl_u/cnt_20ms_3" BEL
+        "ram_ctrl_u/cnt_20ms_2" BEL "ram_ctrl_u/cnt_20ms_1" BEL
+        "ram_ctrl_u/cnt_20ms_0" BEL "ram_ctrl_u/clk_read" BEL
+        "uart_byte_tx_u/bps_cnt_3" BEL "uart_byte_tx_u/bps_cnt_2" BEL
+        "uart_byte_tx_u/bps_cnt_1" BEL "uart_byte_tx_u/bps_cnt_0" BEL
+        "uart_byte_tx_u/div_cnt_15" BEL "uart_byte_tx_u/div_cnt_14" BEL
+        "uart_byte_tx_u/div_cnt_13" BEL "uart_byte_tx_u/div_cnt_12" BEL
+        "uart_byte_tx_u/div_cnt_11" BEL "uart_byte_tx_u/div_cnt_10" BEL
+        "uart_byte_tx_u/div_cnt_9" BEL "uart_byte_tx_u/div_cnt_8" BEL
+        "uart_byte_tx_u/div_cnt_7" BEL "uart_byte_tx_u/div_cnt_6" BEL
+        "uart_byte_tx_u/div_cnt_5" BEL "uart_byte_tx_u/div_cnt_4" BEL
+        "uart_byte_tx_u/div_cnt_3" BEL "uart_byte_tx_u/div_cnt_2" BEL
+        "uart_byte_tx_u/div_cnt_1" BEL "uart_byte_tx_u/div_cnt_0" BEL
+        "uart_byte_tx_u/tx" BEL "uart_byte_tx_u/tx_done" BEL
+        "uart_byte_tx_u/bps_clk" BEL "uart_byte_tx_u/r_data_byte_7" BEL
+        "uart_byte_tx_u/r_data_byte_6" BEL "uart_byte_tx_u/r_data_byte_5" BEL
+        "uart_byte_tx_u/r_data_byte_4" BEL "uart_byte_tx_u/r_data_byte_3" BEL
+        "uart_byte_tx_u/r_data_byte_2" BEL "uart_byte_tx_u/r_data_byte_1" BEL
+        "uart_byte_tx_u/r_data_byte_0" BEL "key_u2/key_flag" BEL
+        "key_u1/key_flag" BEL "ram_ctrl_u/w_en" BEL "ram_ctrl_u/rd_flag" BEL
+        "uart_byte_tx_u/uart_state" BEL "clk_BUFGP/BUFG" PIN
+        "ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<26>"
+        PIN
+        "ram256x8_u/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_noinit.ram/SP.WIDE_PRIM9.ram_pins<27>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 50 MHz HIGH 50%;
+SCHEMATIC END;
 

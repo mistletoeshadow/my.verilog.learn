@@ -112,6 +112,8 @@ Analyzing Verilog file "E:\FPGA\my.verilog.learn\ram.ver3\rtl\uart_byte_tx.v" in
 Parsing module <uart_byte_tx>.
 Analyzing Verilog file "E:\FPGA\my.verilog.learn\ram.ver3\rtl\ram_ctrl.v" into library work
 Parsing module <ram_ctrl>.
+Analyzing Verilog file "E:\FPGA\my.verilog.learn\ram.ver3\rtl\key_filter.v" into library work
+Parsing module <key_filter>.
 Analyzing Verilog file "E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8\ipcore_dir\ram256x8.v" into library work
 Parsing module <ram256x8>.
 Analyzing Verilog file "E:\FPGA\my.verilog.learn\ram.ver3\rtl\ram_top.v" into library work
@@ -126,8 +128,9 @@ Elaborating module <ram_top>.
 Elaborating module <ram256x8>.
 WARNING:HDLCompiler:1499 - "E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8\ipcore_dir\ram256x8.v" Line 39: Empty module <ram256x8> remains a black box.
 
+Elaborating module <key_filter>.
+
 Elaborating module <ram_ctrl>.
-WARNING:HDLCompiler:413 - "E:\FPGA\my.verilog.learn\ram.ver3\rtl\ram_ctrl.v" Line 91: Result of 5-bit expression is truncated to fit in 4-bit target.
 
 Elaborating module <uart_byte_tx>.
 
@@ -141,19 +144,52 @@ Synthesizing Unit <ram_top>.
 	no macro.
 Unit <ram_top> synthesized.
 
+Synthesizing Unit <key_filter>.
+    Related source file is "E:\FPGA\my.verilog.learn\ram.ver3\rtl\key_filter.v".
+    Found 1-bit register for signal <key_state>.
+    Found 20-bit register for signal <cnt>.
+    Found 4-bit register for signal <state>.
+    Found 1-bit register for signal <key_in_sb>.
+    Found 1-bit register for signal <key_tmpa>.
+    Found 1-bit register for signal <key_tmpb>.
+    Found 1-bit register for signal <en_cnt>.
+    Found 1-bit register for signal <key_flag>.
+    Found 1-bit register for signal <cnt_full>.
+    Found 1-bit register for signal <key_in_sa>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 14                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst_n (negative)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 20-bit adder for signal <cnt[19]_GND_3_o_add_17_OUT> created at line 126.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <key_filter> synthesized.
+
 Synthesizing Unit <ram_ctrl>.
     Related source file is "E:\FPGA\my.verilog.learn\ram.ver3\rtl\ram_ctrl.v".
-        cnt_max = 9
+        cnt_max = 9999999
     Found 8-bit register for signal <addr>.
-    Found 4-bit register for signal <cnt_20ms>.
+    Found 24-bit register for signal <cnt_20ms>.
     Found 1-bit register for signal <rd_flag>.
     Found 1-bit register for signal <clk_read>.
     Found 1-bit register for signal <w_en>.
-    Found 8-bit adder for signal <addr[7]_GND_3_o_add_3_OUT> created at line 70.
-    Found 4-bit adder for signal <cnt_20ms[3]_GND_3_o_add_12_OUT> created at line 91.
+    Found 8-bit adder for signal <addr[7]_GND_5_o_add_3_OUT> created at line 72.
+    Found 24-bit adder for signal <cnt_20ms[23]_GND_5_o_add_12_OUT> created at line 93.
     Summary:
 	inferred   2 Adder/Subtractor(s).
-	inferred  15 D-type flip-flop(s).
+	inferred  35 D-type flip-flop(s).
 	inferred   3 Multiplexer(s).
 Unit <ram_ctrl> synthesized.
 
@@ -166,9 +202,9 @@ Synthesizing Unit <uart_byte_tx>.
     Found 1-bit register for signal <bps_clk>.
     Found 1-bit register for signal <tx_done>.
     Found 1-bit register for signal <uart_state>.
-    Found 16-bit adder for signal <div_cnt[15]_GND_4_o_add_6_OUT> created at line 78.
-    Found 4-bit adder for signal <bps_cnt[3]_GND_4_o_add_12_OUT> created at line 99.
-    Found 1-bit 12-to-1 multiplexer for signal <bps_cnt[3]_PWR_4_o_Mux_17_o> created at line 115.
+    Found 16-bit adder for signal <div_cnt[15]_GND_6_o_add_6_OUT> created at line 78.
+    Found 4-bit adder for signal <bps_cnt[3]_GND_6_o_add_12_OUT> created at line 99.
+    Found 1-bit 12-to-1 multiplexer for signal <bps_cnt[3]_PWR_5_o_Mux_17_o> created at line 115.
     WARNING:Xst:2404 -  FFs/Latches <bps_DR<15:13>> (without init value) have a constant value of 0 in block <uart_byte_tx>.
     WARNING:Xst:2404 -  FFs/Latches <bps_DR<13:13>> (without init value) have a constant value of 1 in block <uart_byte_tx>.
     WARNING:Xst:2404 -  FFs/Latches <bps_DR<13:13>> (without init value) have a constant value of 0 in block <uart_byte_tx>.
@@ -189,20 +225,28 @@ Unit <uart_byte_tx> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 4
+# Adders/Subtractors                                   : 6
  16-bit adder                                          : 1
- 4-bit adder                                           : 2
+ 20-bit adder                                          : 2
+ 24-bit adder                                          : 1
+ 4-bit adder                                           : 1
  8-bit adder                                           : 1
-# Registers                                            : 12
- 1-bit register                                        : 7
+# Registers                                            : 30
+ 1-bit register                                        : 23
  16-bit register                                       : 1
- 4-bit register                                        : 2
+ 20-bit register                                       : 2
+ 24-bit register                                       : 1
+ 4-bit register                                        : 1
  8-bit register                                        : 2
-# Multiplexers                                         : 7
+# Multiplexers                                         : 25
  1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 16
  16-bit 2-to-1 multiplexer                             : 2
- 4-bit 2-to-1 multiplexer                              : 2
+ 20-bit 2-to-1 multiplexer                             : 2
+ 24-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
  8-bit 2-to-1 multiplexer                              : 2
+# FSMs                                                 : 2
 
 =========================================================================
 
@@ -212,6 +256,10 @@ Macro Statistics
 
 Reading core <ipcore_dir/ram256x8.ngc>.
 Loading core <ram256x8> for timing and area information for instance <ram256x8_u>.
+
+Synthesizing (advanced) Unit <key_filter>.
+The following registers are absorbed into counter <cnt>: 1 register on signal <cnt>.
+Unit <key_filter> synthesized (advanced).
 
 Synthesizing (advanced) Unit <ram_ctrl>.
 The following registers are absorbed into counter <cnt_20ms>: 1 register on signal <cnt_20ms>.
@@ -228,31 +276,50 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Adders/Subtractors                                   : 1
  16-bit adder                                          : 1
-# Counters                                             : 3
- 4-bit up counter                                      : 2
+# Counters                                             : 5
+ 20-bit up counter                                     : 2
+ 24-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
  8-bit up counter                                      : 1
-# Registers                                            : 31
- Flip-Flops                                            : 31
-# Multiplexers                                         : 4
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+# Multiplexers                                         : 20
  1-bit 12-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 16
  16-bit 2-to-1 multiplexer                             : 2
  8-bit 2-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <key_u1/FSM_0> on signal <state[1:2]> with gray encoding.
+Optimizing FSM <key_u2/FSM_0> on signal <state[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 11
+ 1000  | 10
+-------------------
 
 Optimizing unit <ram_top> ...
+
+Optimizing unit <key_filter> ...
 
 Optimizing unit <ram_ctrl> ...
 
 Optimizing unit <uart_byte_tx> ...
+INFO:Xst:3203 - The FF/Latch <key_u1/state_FSM_FFd1> in Unit <ram_top> is the opposite to the following FF/Latch, which will be removed : <key_u1/key_state> 
+INFO:Xst:3203 - The FF/Latch <key_u2/state_FSM_FFd1> in Unit <ram_top> is the opposite to the following FF/Latch, which will be removed : <key_u2/key_state> 
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block ram_top, actual ratio is 1.
+Found area constraint ratio of 100 (+ 5) on block ram_top, actual ratio is 2.
 
 Final Macro Processing ...
 
@@ -260,8 +327,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 47
- Flip-Flops                                            : 47
+# Registers                                            : 125
+ Flip-Flops                                            : 125
 
 =========================================================================
 
@@ -284,21 +351,21 @@ Top Level Output File Name         : ram_top.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 128
+# BELS                             : 335
 #      GND                         : 2
 #      INV                         : 3
 #      LUT1                        : 15
-#      LUT2                        : 11
+#      LUT2                        : 77
 #      LUT3                        : 26
-#      LUT4                        : 5
-#      LUT5                        : 5
-#      LUT6                        : 12
-#      MUXCY                       : 22
+#      LUT4                        : 6
+#      LUT5                        : 10
+#      LUT6                        : 22
+#      MUXCY                       : 83
 #      MUXF7                       : 1
 #      VCC                         : 2
-#      XORCY                       : 24
-# FlipFlops/Latches                : 47
-#      FDC                         : 26
+#      XORCY                       : 88
+# FlipFlops/Latches                : 125
+#      FDC                         : 104
 #      FDCE                        : 20
 #      FDP                         : 1
 # RAMS                             : 1
@@ -316,15 +383,15 @@ Selected Device : 6slx16csg324-2
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:              47  out of  18224     0%  
- Number of Slice LUTs:                   77  out of   9112     0%  
-    Number used as Logic:                77  out of   9112     0%  
+ Number of Slice Registers:             125  out of  18224     0%  
+ Number of Slice LUTs:                  159  out of   9112     1%  
+    Number used as Logic:               159  out of   9112     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:     84
-   Number with an unused Flip Flop:      37  out of     84    44%  
-   Number with an unused LUT:             7  out of     84     8%  
-   Number of fully used LUT-FF pairs:    40  out of     84    47%  
+ Number of LUT Flip Flop pairs used:    172
+   Number with an unused Flip Flop:      47  out of    172    27%  
+   Number with an unused LUT:            13  out of    172     7%  
+   Number of fully used LUT-FF pairs:   112  out of    172    65%  
    Number of unique control sets:         4
 
 IO Utilization: 
@@ -357,7 +424,7 @@ Clock Information:
 -----------------------------------+------------------------+-------+
 Clock Signal                       | Clock buffer(FF name)  | Load  |
 -----------------------------------+------------------------+-------+
-clk                                | BUFGP                  | 48    |
+clk                                | BUFGP                  | 126   |
 -----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
@@ -369,7 +436,7 @@ Timing Summary:
 Speed Grade: -2
 
    Minimum period: 4.550ns (Maximum Frequency: 219.780MHz)
-   Minimum input arrival time before clock: 4.493ns
+   Minimum input arrival time before clock: 5.008ns
    Maximum output required time after clock: 4.671ns
    Maximum combinational path delay: No path found
 
@@ -380,7 +447,7 @@ All values displayed in nanoseconds (ns)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
   Clock period: 4.550ns (frequency: 219.780MHz)
-  Total number of paths / destination ports: 760 / 87
+  Total number of paths / destination ports: 2385 / 171
 -------------------------------------------------------------------------
 Delay:               4.550ns (Levels of Logic = 3)
   Source:            uart_byte_tx_u/div_cnt_12 (FF)
@@ -393,9 +460,9 @@ Delay:               4.550ns (Levels of Logic = 3)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDC:C->Q              3   0.525   1.221  uart_byte_tx_u/div_cnt_12 (uart_byte_tx_u/div_cnt_12)
-     LUT6:I0->O            1   0.254   0.790  uart_byte_tx_u/div_cnt[15]_bps_DR[15]_equal_6_o<15>4_SW0 (N6)
+     LUT6:I0->O            1   0.254   0.790  uart_byte_tx_u/div_cnt[15]_bps_DR[15]_equal_6_o<15>4_SW0 (N8)
      LUT6:I4->O           16   0.250   1.182  uart_byte_tx_u/div_cnt[15]_bps_DR[15]_equal_6_o<15>4 (uart_byte_tx_u/div_cnt[15]_bps_DR[15]_equal_6_o)
-     LUT3:I2->O            1   0.254   0.000  uart_byte_tx_u/Mmux_GND_4_o_div_cnt[15]_mux_8_OUT17 (uart_byte_tx_u/GND_4_o_div_cnt[15]_mux_8_OUT<0>)
+     LUT3:I2->O            1   0.254   0.000  uart_byte_tx_u/Mmux_GND_6_o_div_cnt[15]_mux_8_OUT17 (uart_byte_tx_u/GND_6_o_div_cnt[15]_mux_8_OUT<0>)
      FDC:D                     0.074          uart_byte_tx_u/div_cnt_0
     ----------------------------------------
     Total                      4.550ns (1.357ns logic, 3.193ns route)
@@ -403,23 +470,23 @@ Delay:               4.550ns (Levels of Logic = 3)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 68 / 66
+  Total number of paths / destination ports: 127 / 127
 -------------------------------------------------------------------------
-Offset:              4.493ns (Levels of Logic = 2)
+Offset:              5.008ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       ram_ctrl_u/addr_7 (FF)
+  Destination:       key_u2/cnt_19 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to ram_ctrl_u/addr_7
+  Data Path: rst_n to key_u2/cnt_19
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
-     INV:I->O             47   0.255   1.770  ram_ctrl_u/rst_n_inv1_INV_0 (ram_ctrl_u/rst_n_inv)
-     FDC:CLR                   0.459          ram_ctrl_u/clk_read
+     INV:I->O            125   0.255   2.285  key_u2/rst_n_inv1_INV_0 (key_u1/rst_n_inv)
+     FDC:CLR                   0.459          key_u1/key_tmpb
     ----------------------------------------
-    Total                      4.493ns (2.042ns logic, 2.451ns route)
-                                       (45.5% logic, 54.5% route)
+    Total                      5.008ns (2.042ns logic, 2.966ns route)
+                                       (40.8% logic, 59.2% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -457,13 +524,13 @@ clk            |    4.550|         |         |         |
 
 
 Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.38 secs
+Total CPU time to Xst completion: 3.64 secs
  
 --> 
 
-Total memory usage is 226352 kilobytes
+Total memory usage is 227372 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   12 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of warnings :   11 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

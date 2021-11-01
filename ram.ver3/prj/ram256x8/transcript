@@ -124,3 +124,5 @@ run -all
 # ** Note: $stop    : ../../sim/tb/ram_tb.v(70)
 #    Time: 30006800 ns  Iteration: 0  Instance: /ram
 # Break in Module ram at ../../sim/tb/ram_tb.v line 70
+# End time: 15:51:19 on Oct 25,2021, Elapsed time: 1:01:27
+# Errors: 0, Warnings: 3

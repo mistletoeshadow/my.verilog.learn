@@ -8,9 +8,6 @@
 <msg type="warning" file="HDLCompiler" num="1499" delta="old" >"E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8\ipcore_dir\ram256x8.v" Line 39: Empty module &lt;<arg fmt="%s" index="1">ram256x8</arg>&gt; remains a black box.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="413" delta="new" >"E:\FPGA\my.verilog.learn\ram.ver3\rtl\ram_ctrl.v" Line 91: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
-</msg>
-
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">bps_DR</arg>&lt;<arg fmt="%d" index="2">15</arg>:<arg fmt="%d" index="3">13</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">0</arg> in block &lt;<arg fmt="%s" index="5">uart_byte_tx</arg>&gt;.
 </msg>
 
@@ -39,6 +36,12 @@
 </msg>
 
 <msg type="warning" file="Xst" num="2404" delta="old" > FFs/Latches &lt;<arg fmt="%s" index="1">bps_DR</arg>&lt;<arg fmt="%d" index="2">11</arg>:<arg fmt="%d" index="3">9</arg>&gt;&gt; (without init value) have a constant value of <arg fmt="%c" index="4">1</arg> in block &lt;<arg fmt="%s" index="5">uart_byte_tx</arg>&gt;.
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">key_u1/state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ram_top</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;key_u1/key_state&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="3203" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">key_u2/state_FSM_FFd1</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">ram_top</arg>&gt; is the opposite to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;key_u2/key_state&gt; </arg>
 </msg>
 
 </messages>

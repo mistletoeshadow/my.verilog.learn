@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8\ram_top.ncd
+OUTFILE=E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8\ram_top.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=E:\FPGA\my.verilog.learn\ram.ver3\prj\ram256x8
+LICENSE=WebPack
+USER_INFO=__0_0_0

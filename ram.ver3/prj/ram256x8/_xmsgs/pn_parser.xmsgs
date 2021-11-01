@@ -11,5 +11,8 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/FPGA/my.verilog.learn/ram.ver3/rtl/ram_ctrl.v&quot; into library work</arg>
 </msg>
 
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;E:/FPGA/my.verilog.learn/ram.ver3/rtl/ram_top.v&quot; into library work</arg>
+</msg>
+
 </messages>
 
