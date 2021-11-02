@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-11-01T19:23:11</DateModified>
+  <DateModified>2021-11-01T21:00:10</DateModified>
   <ModuleName>ram_top</ModuleName>
   <SummaryTimeStamp>2021-11-01T19:16:39</SummaryTimeStamp>
   <SavedFilePath>E:/FPGA/my.verilog.learn/ram.ver3/prj/ram256x8/iseconfig/ram_top.xreport</SavedFilePath>

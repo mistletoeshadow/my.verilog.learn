@@ -1,0 +1,2 @@
+verilog work "ipcore_dir/ROM_dds.v"
+verilog work "../../rtl/dds_wave.v"
