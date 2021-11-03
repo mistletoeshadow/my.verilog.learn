@@ -73,7 +73,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1635837274" xil_pn:in_ck="-1487356955184357693" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5917188466561127903" xil_pn:start_ts="1635837269">
+    <transform xil_pn:end_ts="1635843733" xil_pn:in_ck="-1487356955184357693" xil_pn:name="TRANEXT_xstsynthesize_spartan6" xil_pn:prop_ck="5917188466561127903" xil_pn:start_ts="1635843728">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
@@ -93,11 +93,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1635837261" xil_pn:in_ck="6968556067021270800" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="747416275765098753" xil_pn:start_ts="1635837259">
+    <transform xil_pn:end_ts="1635843783" xil_pn:in_ck="6968556067021270800" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="747416275765098753" xil_pn:start_ts="1635843782">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="netgen"/>
       <outfile xil_pn:name="netgen/synthesis/dds_wave_synthesis.nlf"/>
       <outfile xil_pn:name="netgen/synthesis/dds_wave_synthesis.v"/>

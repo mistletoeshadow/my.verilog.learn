@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: dds_wave.prj
@@ -128,11 +128,11 @@ WARNING:HDLCompiler:1499 - "E:\FPGA\my.verilog.learn\DDS.ver.1\prj\DDS\ipcore_di
 
 Synthesizing Unit <dds_wave>.
     Related source file is "E:\FPGA\my.verilog.learn\DDS.ver.1\rtl\dds_wave.v".
-    Found 32-bit register for signal <r_f_word>.
+    Found 11-bit register for signal <r_P>.
     Found 32-bit register for signal <f_cnt>.
-    Found 11-bit register for signal <r_p_word>.
-    Found 32-bit adder for signal <r_f_word[31]_f_cnt[31]_add_1_OUT> created at line 30.
-    Found 11-bit adder for signal <addr> created at line 40.
+    Found 32-bit register for signal <r_K>.
+    Found 32-bit adder for signal <f_cnt[31]_r_K[31]_add_2_OUT> created at line 37.
+    Found 11-bit adder for signal <addr> created at line 41.
     Summary:
 	inferred   2 Adder/Subtractor(s).
 	inferred  75 D-type flip-flop(s).
@@ -159,7 +159,7 @@ Reading core <ipcore_dir/ROM_dds.ngc>.
 Loading core <ROM_dds> for timing and area information for instance <wave_rom>.
 
 Synthesizing (advanced) Unit <dds_wave>.
-The following registers are absorbed into accumulator <r_f_word>: 1 register on signal <r_f_word>.
+The following registers are absorbed into accumulator <f_cnt>: 1 register on signal <f_cnt>.
 Unit <dds_wave> synthesized (advanced).
 
 =========================================================================
@@ -309,16 +309,16 @@ Timing constraint: Default period analysis for Clock 'clk'
   Total number of paths / destination ports: 1926 / 54
 -------------------------------------------------------------------------
 Delay:               3.320ns (Levels of Logic = 13)
-  Source:            r_p_word_0 (FF)
+  Source:            r_P_0 (FF)
   Destination:       wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram (RAM)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: r_p_word_0 to wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
+  Data Path: r_P_0 to wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/s6_init.ram/SP.SIMPLE_PRIM9.ram
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q              1   0.525   0.790  r_p_word_0 (r_p_word_0)
+     FDC:C->Q              1   0.525   0.790  r_P_0 (r_P_0)
      LUT2:I0->O            1   0.250   0.000  Madd_addr_lut<0> (Madd_addr_lut<0>)
      MUXCY:S->O            1   0.215   0.000  Madd_addr_cy<0> (Madd_addr_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Madd_addr_cy<1> (Madd_addr_cy<1>)
@@ -343,16 +343,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              4.737ns (Levels of Logic = 2)
   Source:            rst_n (PAD)
-  Destination:       f_cnt_0 (FF)
+  Destination:       r_K_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: rst_n to f_cnt_0
+  Data Path: rst_n to r_K_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O             1   1.328   0.681  rst_n_IBUF (rst_n_IBUF)
      INV:I->O             75   0.255   2.014  rst_n_inv1_INV_0 (rst_n_inv)
-     FDC:CLR                   0.459          f_cnt_0
+     FDC:CLR                   0.459          r_K_0
     ----------------------------------------
     Total                      4.737ns (2.042ns logic, 2.695ns route)
                                        (43.1% logic, 56.9% route)
@@ -363,16 +363,16 @@ Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              5.693ns (Levels of Logic = 2)
   Source:            wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (RAM)
-  Destination:       f_out<9> (PAD)
+  Destination:       F_out<9> (PAD)
   Source Clock:      clk rising
 
-  Data Path: wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to f_out<9>
+  Data Path: wave_rom/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram to F_out<9>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      RAMB16BWER:CLKA->DOA5    1   2.100   0.681  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/s6_init.ram/SP.SIMPLE_PRIM18.ram (douta<9>)
      end scope: 'wave_rom:douta<9>'
-     OBUF:I->O                 2.912          f_out_9_OBUF (f_out<9>)
+     OBUF:I->O                 2.912          F_out_9_OBUF (F_out<9>)
     ----------------------------------------
     Total                      5.693ns (5.012ns logic, 0.681ns route)
                                        (88.0% logic, 12.0% route)
@@ -393,8 +393,8 @@ clk            |    3.320|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 3.33 secs
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.30 secs
  
 --> 
 
