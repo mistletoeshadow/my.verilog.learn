@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2021-11-08T15:38:00</DateModified>
+  <DateModified>2021-11-08T16:37:16</DateModified>
   <ModuleName>dds_wave</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>E:/FPGA/my.verilog.learn/DDS.ver.1/prj/DDS/iseconfig/dds_wave.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/DDS.ver.1/prj/DDS\</ImplementationReportsDirectory>
-  <DateInitialized>2021-11-01T21:00:46</DateInitialized>
+  <SavedFilePath>E:/FPGA/my.verilog.learn/dds.ver2/prj/dds_wave/iseconfig/dds_wave.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>E:/FPGA/my.verilog.learn/dds.ver2/prj/dds_wave\</ImplementationReportsDirectory>
+  <DateInitialized>2021-11-08T15:42:18</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>
