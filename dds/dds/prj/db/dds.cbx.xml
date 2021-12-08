@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="dds">
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|dds:inst|wave_generate:wave_generate_inst|addr_control:addr_control_inst|mydiv:mydiv_inst|lpm_divide:LPM_DIVIDE_component|lpm_divide_rdv:auto_generated|sign_div_unsign_dai:divider|alt_u_div_ftf:divider|altshift_taps:DFFNumerator_rtl_0" CBX_FILE_NAME="shift_taps_vpo.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|dds:inst|wave_generate:wave_generate_inst|rom1024x8:rom1024x8_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_e091.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|dds:inst|wave_generate:wave_generate_inst|addr_control:addr_control_inst|mydiv:mydiv_inst|lpm_divide:LPM_DIVIDE_component" CBX_FILE_NAME="lpm_divide_rdv.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|dds:inst|wave_generate:wave_generate_inst|adjust_a:adjust_a_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_nbh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top|dds:inst|wave_generate:wave_generate_inst|adjust_a:adjust_a_inst|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|mpar_add:sub_par_add|lpm_add_sub:adder[0]" CBX_FILE_NAME="add_sub_vch.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
